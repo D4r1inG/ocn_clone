@@ -13,6 +13,7 @@ export const getConfig = () => {
     },
     cookieOptions: {
       secure: true,
+      // Set to none if site integrates with gchat
       sameSite: 'strict',
       path: '/',
       httpOnly: true,

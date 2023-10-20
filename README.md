@@ -11,6 +11,10 @@
 
 - .env (Thêm các env dựa theo file .env.example)
 
+## Note
+
+- Set cookie [option](./src/configs/Auth/config.ts) sameSite: none nếu web app tích hợp lên Gchat
+
 ## Các bước chạy project trên local
 
 - Bước 1: cp .env.example .env.local
