@@ -1,7 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
-  const date = process.env.APP_VERSION;
+  const date = process.env.buildId;
+
   return (
     <Html lang="en">
       <Head>

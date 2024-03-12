@@ -1,6 +1,6 @@
 export const getConfig = () => {
   const baseConfig = {
-    appUrl: process.env.NEXT_PUBLIC_APP_URL || '',
+    appUrl: process.env.NEXT_PUBLIC_APP_URL,
     clientSecret: process.env.OIDC_CLIENT_SECRET,
     clientId: process.env.OIDC_CLIENT_ID,
     issuer: process.env.NEXT_PUBLIC_OIDC_ISSUER,
@@ -13,7 +13,6 @@ export const getConfig = () => {
     },
     cookieOptions: {
       secure: true,
-      // Set to none if site integrates with gchat
       sameSite: 'strict',
       path: '/',
       httpOnly: true,

@@ -1,18 +1,31 @@
 {
-  "name": "titan",
+  "name": "boilerplate-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "setup": "node ./setup/index.mjs",
     "postinstall": "[ \"$NODE_ENV\" = production ] && exit 0; husky install",
-    "dev": "cross-env NODE_OPTIONS='--inspect' APP_VERSION=\"$(date +'%Y-%m-%d %H:%M:%S')\" next dev",
-    "build": "APP_VERSION=$(date +'%Y-%m-%d %H:%M:%S') NODE_ENV=production next build --no-lint",
+    "dev": "next dev",
+    "dev:test": "cross-env NODE_ENV=test next dev",
+    "build": "NODE_ENV=production next build --no-lint",
     "start": "next start",
     "lint": "next lint",
     "types-check": "tsc --pretty --noEmit",
     "lint:prettier": "prettier --check \"src/**/*+(js|jsx|ts|tsx|scss)\"",
     "lint:script": "eslint -c .eslintrc.json \"./src/**/*.{js,ts,tsx}\"",
     "lint:style": "stylelint src/**/*.{css,scss}",
-    "lintfix": "prettier --write --list-different \"src/**/*+(js|jsx|ts|tsx|scss)\" && npm run lint:script -- --fix && npm run lint:style -- --fix"
+    "lintfix": "prettier --write --list-different \"src/**/*+(js|jsx|ts|tsx|scss)\" && npm run lint:script -- --fix && npm run lint:style -- --fix",
+    "cypress:open": "npx cypress open",
+    "cypress:coverage": "open ./cypress-coverage/lcov-report/index.html"
+  },
+  "nyc": {
+    "extends": "./.nycrc.json",
+    "report-dir": "cypress-coverage",
+    "reporter": [
+      "json",
+      "lcov",
+      "text-summary"
+    ]
   },
   "dependencies": {
     "@svgr/webpack": "^6.5.1",
@@ -30,15 +43,23 @@
     "typescript": "^5.1.6"
   },
   "devDependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@cypress/code-coverage": "^3.12.32",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "babel-plugin-istanbul": "^6.1.1",
+    "chalk": "^5.3.0",
     "cross-env": "^7.0.3",
+    "cypress": "^13.7.1",
     "eslint": "^8.46.0",
     "eslint-config-next": "^13.4.19",
     "eslint-config-prettier": "^8.6.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
+    "nyc": "^15.1.0",
+    "pathmodify": "^0.5.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
+    "prompts": "^2.4.2",
     "sass": "^1.58.2",
     "stylelint": "^15.1.0",
     "stylelint-config-prettier-scss": "^0.0.1",

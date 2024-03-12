@@ -1,6 +1,23 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
 const path = require('path');
+const fs = require('fs');
+
+const getLatestCommit = () => {
+  const rev = fs.readFileSync('.git/HEAD').toString().trim();
+  let buildId;
+
+  if (rev.indexOf(':') === -1) {
+    buildId = rev;
+  } else {
+    buildId = fs
+      .readFileSync(`.git/${rev.substring(5)}`)
+      .toString()
+      .trim();
+  }
+
+  return buildId.substring(0, 8);
+};
 
 const nextConfig = {
   output: 'standalone',
@@ -30,6 +47,12 @@ const nextConfig = {
         },
       ],
     };
+  },
+  env: {
+    buildId: getLatestCommit(),
+  },
+  experimental: {
+    forceSwcTransforms: process.env.NODE_ENV !== 'test',
   },
 };
 

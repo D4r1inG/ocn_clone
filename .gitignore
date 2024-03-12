@@ -42,3 +42,7 @@ next-env.d.ts
 /cypress/fixtures
 # Sentry Auth Token
 .sentryclirc
+
+.nyc_output
+cypress-coverage/lcov-report
+cypress-coverage/coverage-final.json
