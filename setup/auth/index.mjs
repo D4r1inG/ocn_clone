@@ -25,12 +25,11 @@ export const getConfig = () => {
 
 const authDefaultEnv = ` 
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-
-OIDC_CLIENT_ID=
-OIDC_REDIRECT_URI=http://localhost:3000/api/auth/callback
-OIDC_CLIENT_SECRET=
 NEXT_PUBLIC_OIDC_ISSUER=https://auth.ghtklab.com
 NEXT_PUBLIC_OIDC_AUTH_URL=https://id.ghtklab.com
+OIDC_REDIRECT_URI=http://localhost:3000/api/auth/callback
+OIDC_CLIENT_ID=
+OIDC_CLIENT_SECRET=
 
 NEXT_PUBLIC_GCHAT_API_URL=https://chat.ghtklab.com
 `;

@@ -66,7 +66,7 @@ const handleChangeName = async (name) => {
     const result = data.replace('boilerplate-nextjs', name.trim().toLowerCase());
 
     await fs.writeFile('package.json', result);
-    log.green('\n✔ Project name updated!');
+    log.green('\n- Project name updated!\n');
   } catch (err) {
     console.log(err);
   }
@@ -77,8 +77,10 @@ const handleSetupTheme = async () => {
   const configDir = path.join(process.cwd(), '/src/configs');
   const providerDir = path.join(process.cwd(), '/src/provider');
   const pagesDir = path.join(process.cwd(), '/src/pages');
+  let id;
 
   try {
+    id = log.install('Installing theme config');
     await createDir(providerDir);
 
     await Promise.all([
@@ -90,42 +92,49 @@ const handleSetupTheme = async () => {
       fs.writeFile(path.join(root, 'tailwind.config.ts'), tailwindConfig),
     ]);
 
-    log.green('\n✔ Theme config created!');
+    await delay(1000);
+    log.green('- Theme config created!\n', id);
   } catch (err) {
-    log.red(`\nError while creating theme config:\n${err}`);
+    log.red(`Error while creating theme config:\n${err}\n`, id);
   }
-  await delay(1000);
 };
 
 const handleSetupAuth = async () => {
   const configDir = path.join(process.cwd(), '/src/configs/Auth');
+  let id;
 
   try {
-    await fs.writeFile(path.join(configDir, 'config.ts'), authOptions);
+    id = log.install('Updating auth config');
 
-    log.green('\n✔ Auth config updated!');
+    await fs.writeFile(path.join(configDir, 'config.ts'), authOptions);
+    await delay(1000);
+
+    log.green('- Auth config updated!\n', id);
   } catch (err) {
-    log.red(`\nError while updating auth config:\n${err}`);
+    log.red(`Error while updating auth config:\n${err}\n`, id);
   }
-  await delay(1000);
 };
 
 const handleSetupSentry = async (projectName) => {
   const root = path.join(process.cwd(), '/');
+  let id;
 
   try {
+    id = log.install('Installing Sentry packages');
+    await command('npm', ['install', '@sentry/nextjs'], { cwd: root });
+
     await Promise.all([
       fs.writeFile(path.join(root, 'sentry.client.config.ts'), sentryConfigClient),
       fs.writeFile(path.join(root, 'sentry.edge.config.ts'), sentryConfigEdge),
       fs.writeFile(path.join(root, 'sentry.server.config.ts'), sentryConfigServer),
       fs.writeFile(path.join(root, 'next.config.js'), createNewNextConfig(projectName)),
     ]);
+    await delay(1000);
 
-    log.green('\n✔ Sentry config installed!');
+    log.green('- Sentry config installed!\n', id);
   } catch (err) {
-    log.red(`\nError while creating sentry config:\n${err}`);
+    log.red(`Error while creating sentry config:\n${err}\n`, id);
   }
-  await delay(1000);
 };
 
 (async () => {
@@ -139,11 +148,11 @@ const handleSetupSentry = async (projectName) => {
     sentryResponse = await prompts(sentryQuestions);
   }
 
+  const sTime = performance.now();
+
   if (response.name) {
     await handleChangeName(response.name);
   }
-
-  const sTime = performance.now();
 
   if (response.theme) {
     await handleSetupTheme();
@@ -155,16 +164,12 @@ const handleSetupSentry = async (projectName) => {
 
   if (response.sentry) {
     env += `NEXT_PUBLIC_SENTRY_DSN=${sentryResponse.sentryDsn?.trim()}\n`;
-
-    log.blue('\n  - Installing Sentry packages...');
-    await command('npm', ['install', '@sentry/nextjs'], { cwd: root });
     await handleSetupSentry(sentryResponse.projectName?.trim());
   }
 
   await fs.writeFile(path.join(root, '.env'), env);
-  log.green('\n✔ Created default env file');
 
-  log.blue('\n  - Cleaning up...');
+  const id = log.install('Cleaning up');
   //  Delete setup folder once done
   deleteFolderRecursive(path.join(root, 'setup'));
 
@@ -173,5 +178,5 @@ const handleSetupSentry = async (projectName) => {
   await command('npx', ['prettier', '.', '--write', '--ignore-path', '.gitignore'], { cwd: root });
 
   const fTime = performance.now();
-  log.greenBold(`\n✔ Setup completed in ${(fTime - sTime).toFixed(2)}ms \n`);
+  log.greenBold(`\n✔ Setup completed in ${(fTime - sTime).toFixed(2)}ms \n`, id);
 })();

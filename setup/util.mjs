@@ -4,11 +4,41 @@ import { promises as fs } from 'fs';
 import { spawn } from 'child_process';
 import chalk from 'chalk';
 
+const clearLine = () => {
+  process.stdout.clearLine();
+  process.stdout.cursorTo(0);
+};
+
 export const log = {
-  green: (message) => console.log(chalk.greenBright(message)),
-  greenBold: (message) => console.log(chalk.green.bold(message)),
-  red: (message) => console.log(chalk.bgRed.bold(message)),
-  blue: (message) => console.log(chalk.cyan(message)),
+  green: (message, id) => {
+    if (id) clearInterval(id);
+    clearLine();
+    process.stdout.write(chalk.greenBright(message));
+  },
+  greenBold: (message, id) => {
+    if (id) clearInterval(id);
+    clearLine();
+    process.stdout.write(chalk.green.bold(message));
+  },
+  red: (message, id) => {
+    if (id) clearInterval(id);
+    clearLine();
+    process.stdout.write(chalk.bgRed.bold(message));
+  },
+  install: (message) => {
+    process.stdout.write(chalk.dim(`[${message}]`));
+    let count = 0;
+
+    const id = setInterval(() => {
+      process.stdout.clearLine();
+      process.stdout.cursorTo(0);
+      count++;
+      process.stdout.write(chalk.dim(`[${message}${Array(count)?.join('.')}]`));
+      if (count === 6) count = 0;
+    }, 800);
+
+    return id;
+  },
 };
 
 export const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -19,10 +49,6 @@ export const command = (cmd, args, options = {}) => {
 
   return new Promise((resolve, reject) => {
     const child = spawn(cmd, args, options);
-
-    child.stdout.on('data', (data) => {
-      console.log(data.toString());
-    });
 
     child.on('exit', (code) => {
       if (code === 0) {
