@@ -7,7 +7,11 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta app-version={date} />
-        <link rel="icon" href="/ghtk.ico" />
+        <link rel="icon" href="/img/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Satisfy&display=swap"
+        />
       </Head>
       <body>
         <Main />

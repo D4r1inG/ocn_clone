@@ -1,15 +1,10 @@
 import type { AppProps } from 'next/app';
 import { ReactElement, ReactNode } from 'react';
 import { NextPage } from 'next';
-import { ConfigProvider } from '@/UI';
-import theme from '@/configs/antd';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import 'antd/dist/reset.css';
-import '@/styles/globals.scss';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import Head from 'next/head';
-import vn from 'antd/locale/vi_VN';
-import { AuthClient } from '@/configs/Auth/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@/styles/globals.scss';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -21,23 +16,15 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-const queryClient = new QueryClient();
-
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   return (
     <>
       <Head>
-        <title>Giao Hàng Tiết Kiệm</title>
+        <title>ocn.com.vn</title>
       </Head>
-      <ConfigProvider theme={theme} locale={vn}>
-        <QueryClientProvider client={queryClient}>
-          <ErrorBoundary>
-            <AuthClient>{getLayout(<Component {...pageProps} />)}</AuthClient>
-          </ErrorBoundary>
-        </QueryClientProvider>
-      </ConfigProvider>
+      <ErrorBoundary>{getLayout(<Component {...pageProps} />)}</ErrorBoundary>
     </>
   );
 }
