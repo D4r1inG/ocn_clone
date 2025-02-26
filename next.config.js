@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
 const path = require('path');
-const fs = require('fs');
+const { i18n } = require('./next-i18next.config.js');
 
 const nextConfig = {
+  i18n,
   output: 'standalone',
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

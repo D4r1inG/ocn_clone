@@ -1,0 +1,22 @@
+{
+  "header": {
+    "homePage": "Trang chủ",
+    "services": "Dịch vụ",
+    "projects": "Dự án",
+    "aboutUs": "Về chúng tôi",
+    "team": "Đội ngũ",
+    "pricing": "Bảng giá",
+    "blogs": "Bài viết",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "h1": {
+      "prefix": "Chúng tôi cung cấp các giải pháp",
+      "highlight": "hoàn thiện",
+      "suffix": "đáp ứng mọi nhu cầu."
+    },
+    "p": "Đồng hành cùng phát triển bền vững của doanh nghiệp.",
+    "btn1:": "Tìm hiểu thêm",
+    "btn2": "Liên hệ"
+  }
+}

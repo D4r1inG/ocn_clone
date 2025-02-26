@@ -2,9 +2,10 @@ import type { AppProps } from 'next/app';
 import { ReactElement, ReactNode } from 'react';
 import { NextPage } from 'next';
 import ErrorBoundary from '@/components/ErrorBoundary';
-import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/globals.scss';
+import { appWithTranslation } from 'next-i18next';
+import Head from 'next/head';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -16,15 +17,17 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-export default function App({ Component, pageProps }: AppPropsWithLayout) {
+function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>ocn.com.vn</title>
-      </Head>
+      </Head> */}
       <ErrorBoundary>{getLayout(<Component {...pageProps} />)}</ErrorBoundary>
     </>
   );
 }
+
+export default appWithTranslation(App);

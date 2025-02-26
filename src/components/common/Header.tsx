@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import cn from 'classnames';
+import { useTranslation } from 'next-i18next';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation('common');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +27,6 @@ export const Header = () => {
         'pre-stuck stuck': isScrolled,
       })}
     >
-      {/* Navbar 1 - Bootstrap Brain Component */}
       <nav
         id="scrollspyNav"
         className="navbar navbar-expand-lg bsb-tpl-bg-blue bsb-navbar bsb-navbar-hover bsb-navbar-caret bsb-tpl-navbar-sticky"
@@ -79,7 +80,7 @@ export const Header = () => {
                       data-bs-dismiss="offcanvas"
                       data-bs-target="#offcanvasNavbar"
                     >
-                      Trang chủ
+                      {t('header.homePage')}
                     </a>
                   </h4>
                 </li>
@@ -91,7 +92,7 @@ export const Header = () => {
                       data-bs-dismiss="offcanvas"
                       data-bs-target="#offcanvasNavbar"
                     >
-                      Dịch vụ
+                      {t('header.services')}
                     </a>
                   </h4>
                 </li>
@@ -103,7 +104,7 @@ export const Header = () => {
                       data-bs-dismiss="offcanvas"
                       data-bs-target="#offcanvasNavbar"
                     >
-                      Dự án
+                      {t('header.projects')}
                     </a>
                   </h4>
                 </li>
@@ -115,7 +116,7 @@ export const Header = () => {
                       data-bs-dismiss="offcanvas"
                       data-bs-target="#offcanvasNavbar"
                     >
-                      Về chúng tôi
+                      {t('header.aboutUs')}
                     </a>
                   </h4>
                 </li>
@@ -127,7 +128,7 @@ export const Header = () => {
                       data-bs-dismiss="offcanvas"
                       data-bs-target="#offcanvasNavbar"
                     >
-                      Đội ngũ
+                      {t('header.team')}
                     </a>
                   </h4>
                 </li>
@@ -139,7 +140,7 @@ export const Header = () => {
                       data-bs-dismiss="offcanvas"
                       data-bs-target="#offcanvasNavbar"
                     >
-                      Bảng giá
+                      {t('header.pricing')}
                     </a>
                   </h4>
                 </li>
@@ -151,7 +152,7 @@ export const Header = () => {
                       data-bs-dismiss="offcanvas"
                       data-bs-target="#offcanvasNavbar"
                     >
-                      Bài viết
+                      {t('header.blogs')}
                     </a>
                   </h4>
                 </li>
@@ -163,7 +164,7 @@ export const Header = () => {
                       data-bs-dismiss="offcanvas"
                       data-bs-target="#offcanvasNavbar"
                     >
-                      Liên hệ
+                      {t('header.contact')}
                     </a>
                   </h4>
                 </li>
