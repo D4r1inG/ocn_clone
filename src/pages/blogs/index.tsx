@@ -8,12 +8,12 @@ export default function Default({ blogs }) {
 }
 
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
-  const locale = ctx.locale;
-  const fileNames = read(`/public/contents/${locale}`, 'dir');
+  const locale = ctx.locale || 'vi';
+  const fileNames = read(`/contents/${locale}`, 'dir');
   const blogPosts = [];
 
   for (const fileName of fileNames) {
-    const rawContent = read(`/public/contents/${locale}/${fileName}`, 'file') as string;
+    const rawContent = read(`/contents/${locale}/${fileName}`, 'file') as string;
 
     const { data: frontmatter } = matter(rawContent);
 

@@ -9,9 +9,9 @@ export default function Default({ source }) {
 
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   const id = ctx.params.id;
-  const locale = ctx.locale;
+  const locale = ctx.locale || 'vi';
 
-  const source = read(`/public/contents/${locale}/${id}.mdx`, 'file') as string;
+  const source = read(`/contents/${locale}/${id}.mdx`, 'file') as string;
 
   if (!source) {
     return { notFound: true };
