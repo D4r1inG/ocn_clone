@@ -1,4 +1,4 @@
-import { ArrowDownIcon } from '@/components/icons';
+import { ArrowDownIcon, Calendar, Comment, Eye } from '@/components/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -15,25 +15,51 @@ interface IProps {
 
 export const Card: React.FC<IProps> = ({ content }) => {
   const { title, desc, date, image, slug } = content;
+
   return (
-    <div className="card-container relative flex rounded-md overflow-hidden">
-      {/* <div className="relative card-img shrink-0">
-        <Image src={image} fill alt="" className="object-cover" />
-      </div> */}
-      <div className="card-content flex flex-col justify-between h-full gap-3 p-4 bg-th-gray-30">
-        <div>
-          <Link href={`/blogs/${slug}`} className="text-th-text block text-xl font-semibold">
+    <article>
+      <figure className="rounded overflow-hidden mb-3 bsb-overlay-hover">
+        <a href="#!">
+          <img className="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src={image} alt="" />
+        </a>
+        <figcaption>
+          <Eye className="bi bi-eye text-white bsb-hover-fadeInLeft" />
+          <h4 className="h6 text-white bsb-hover-fadeInRight mt-2">Chi tiết</h4>
+        </figcaption>
+      </figure>
+      <div className="entry-header mb-3">
+        {/* <ul className="entry-meta list-unstyled d-flex mb-2">
+          <li>
+            <a className="link-primary text-decoration-none" href="#!">
+              Kinh doanh
+            </a>
+          </li>
+        </ul> */}
+        <h2 className="entry-title h4 mb-0">
+          <Link href={`/blogs/${slug}`} className="link-dark text-decoration-none">
             {title}
           </Link>
-          <p className="text-th-gray-600 text-sm mt-2">{desc}</p>
-        </div>
-        <div className="flex justify-between items-center text-sm">
-          <Link href={`/blogs/${slug}`} className="flex items-center text-th-text !text-base">
-            Xem chi tiết <ArrowDownIcon className="rotate-90 scale-75" />
-          </Link>
-          <span className="text-th-gray-600">{date}</span>
-        </div>
+        </h2>
       </div>
-    </div>
+      <div className="entry-footer">
+        <ul className="entry-meta list-unstyled d-flex align-items-center mb-0">
+          <li>
+            <a className="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+              <Calendar />
+              <span className="ms-2 fs-7">{date}</span>
+            </a>
+          </li>
+          <li>
+            <span className="px-3">•</span>
+          </li>
+          <li>
+            <a className="link-secondary text-decoration-none d-flex align-items-center" href="#!">
+              <Comment />
+              <span className="ms-2 fs-7">55</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
   );
 };

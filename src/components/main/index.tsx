@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export const Main = () => {
@@ -976,9 +977,9 @@ export const Main = () => {
               <p className="fs-4 mb-4 mb-xl-5">
                 Cập nhật các tin tức mới nhất về hạ tầng công nghệ thông tin.
               </p>
-              <a href="#!" className="btn bsb-btn-2xl btn-primary rounded-pill">
+              <Link href="/blogs" className="btn bsb-btn-2xl btn-primary rounded-pill">
                 Truy cập
-              </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-8">
               <div className="row justify-content-xl-end">

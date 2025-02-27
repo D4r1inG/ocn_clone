@@ -1,17 +1,19 @@
 import { Posts } from '@/components/blogs/posts';
 import { read } from '@/utils/file-helper';
 import matter from 'gray-matter';
+import { GetServerSidePropsContext } from 'next';
 
 export default function Default({ blogs }) {
   return <Posts blogs={blogs} />;
 }
 
-export async function getServerSideProps() {
-  const fileNames = read('/public/contents', 'dir');
+export async function getServerSideProps(ctx: GetServerSidePropsContext) {
+  const locale = ctx.locale;
+  const fileNames = read(`/public/contents/${locale}`, 'dir');
   const blogPosts = [];
 
   for (const fileName of fileNames) {
-    const rawContent = read(`/public/contents/${fileName}`, 'file') as string;
+    const rawContent = read(`/public/contents/${locale}/${fileName}`, 'file') as string;
 
     const { data: frontmatter } = matter(rawContent);
 
