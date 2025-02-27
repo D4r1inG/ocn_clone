@@ -1,4 +1,3 @@
-import { Header } from '@/components/common/Header';
 import { Footer } from '@/components/footer';
 import { Hero } from '@/components/hero';
 import { Main } from '@/components/main';
@@ -8,7 +7,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 export default function Home(): ReactNode {
   return (
     <>
-      <Header />
       <Hero />
       <Main />
       <Footer />

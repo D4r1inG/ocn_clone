@@ -6,3 +6,8 @@ export { default as UserIcon } from '@/components/icons/UserIcon.svg';
 export { default as Eye } from '@/components/icons/Eye.svg';
 export { default as Calendar } from '@/components/icons/Calendar.svg';
 export { default as Comment } from '@/components/icons/Comment.svg';
+export { default as Cloud } from '@/components/icons/Cloud.svg';
+export { default as ArrowRight } from '@/components/icons/ArrowRight.svg';
+export { default as Aspect } from '@/components/icons/Aspect.svg';
+export { default as Airplane } from '@/components/icons/Airplane.svg';
+export { default as Alarm } from '@/components/icons/Alarm.svg';

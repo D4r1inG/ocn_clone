@@ -28,8 +28,8 @@ Navbar
     min-height: 5rem;
 
     img {
-      max-height: 36px !important;
-      height: 36px;
+      max-height: 50px !important;
+      height: 50px;
     }
 
     //Removing navbar item default hover behaviour
@@ -60,7 +60,7 @@ Navbar
       .navbar-link {
         color: $muted-grey;
 
-        &:after {
+        &::after {
           top: 55%;
           height: 0.5em;
           width: 0.5em;
@@ -84,7 +84,7 @@ Navbar
         .navbar-link {
           color: $secondary;
 
-          &:after {
+          &::after {
             border-color: $secondary;
           }
         }
@@ -106,7 +106,7 @@ Navbar
     width: 100%;
     min-height: 4rem !important;
     background: $white;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
 
     a {
       color: $blue-grey;
@@ -127,7 +127,7 @@ Navbar
   background: $white;
   transform: translateY(-100%);
   z-index: 100;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
 
   &.is-active {
     transform: translateY(0);

@@ -2,6 +2,25 @@ body {
   overflow-x: hidden;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-heading-color);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
 .material-icons {
   font-family: 'Material Icons', sans-serif;
 }
@@ -9,10 +28,7 @@ body {
 //Preloader
 #preloader {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: $white;
   z-index: 99;
 }
@@ -23,6 +39,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+
   // background-image: url(../img/loaders/rings.svg);
   background-size: 80px 80px;
   background-repeat: no-repeat;
@@ -39,7 +56,6 @@ body {
   bottom: 25px;
   margin: 0 25px 0 0;
   z-index: 9999;
-  transition: 0.35s;
   transform: scale(0.7);
   transition: all 0.5s;
 
@@ -63,14 +79,14 @@ body {
       text-align: center;
       font-size: 26px;
 
-      &:after {
+      &::after {
         outline: none;
         content: '\e316';
         font-family: 'Material Icons', sans-serif;
         position: relative;
         display: block;
         top: 52%;
-        -webkit-transform: translateY(-55%);
+        transform: translateY(-55%);
         transform: translateY(-55%);
       }
 
@@ -149,22 +165,22 @@ body {
 }
 
 //Input placeholders
-::-webkit-input-placeholder {
+::input-placeholder {
   /* Chrome/Opera/Safari */
   color: $placeholder;
 }
 
-::-moz-placeholder {
+::placeholder {
   /* Firefox 19+ */
   color: $placeholder;
 }
 
-:-ms-input-placeholder {
+:input-placeholder {
   /* IE 10+ */
   color: $placeholder;
 }
 
-:-moz-placeholder {
+:placeholder {
   /* Firefox 18- */
   color: $placeholder;
 }
