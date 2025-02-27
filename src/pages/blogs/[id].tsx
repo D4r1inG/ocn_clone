@@ -7,23 +7,20 @@ export default function Default({ source }) {
   return <Post source={source} />;
 }
 
-export async function getStaticPaths() {
-  const fileNames = read('/public/contents/en', 'dir');
+export async function getStaticPaths({ locales }) {
+  const fileNameEn = read('/public/contents/en', 'dir') as string[];
 
-  const blogPostsId = [];
-
-  for (const fileName of fileNames) {
-    blogPostsId.push({
-      slug: fileName.replace('.mdx', ''),
+  const paths = fileNameEn.flatMap((fileName) => {
+    return locales.map((locale) => {
+      return {
+        params: { id: fileName.replace('.mdx', '') },
+        locale,
+      };
     });
-  }
+  });
 
   return {
-    paths: blogPostsId.map((post) => ({
-      params: {
-        id: post.slug,
-      },
-    })),
+    paths,
     fallback: false,
   };
 }
