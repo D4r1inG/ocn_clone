@@ -22,9 +22,9 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>ocn.com.vn</title>
-      </Head>
+      </Head> */}
       <ErrorBoundary>{getLayout(<Component {...pageProps} />)}</ErrorBoundary>
     </>
   );
