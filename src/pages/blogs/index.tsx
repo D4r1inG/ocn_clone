@@ -3,17 +3,19 @@ import { read } from '@/utils/file-helper';
 import matter from 'gray-matter';
 import { GetServerSidePropsContext } from 'next';
 
+const defaultPath = process.env.NODE_ENV === 'development' ? '/public/contents' : '/contents';
+
 export default function Default({ blogs }) {
   return <Posts blogs={blogs} />;
 }
 
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   const locale = ctx.locale || 'vi';
-  const fileNames = read(`/contents/${locale}`, 'dir');
+  const fileNames = read(`${defaultPath}/${locale}`, 'dir');
   const blogPosts = [];
 
   for (const fileName of fileNames) {
-    const rawContent = read(`/contents/${locale}/${fileName}`, 'file') as string;
+    const rawContent = read(`${defaultPath}/${locale}/${fileName}`, 'file') as string;
 
     const { data: frontmatter } = matter(rawContent);
 

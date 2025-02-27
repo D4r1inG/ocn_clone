@@ -11,7 +11,7 @@ type HeadingProps = {
 };
 
 function getId(children: string) {
-  if (children.split(' ').length === 1) return children.toLowerCase();
+  if (children?.split(' ').length === 1) return children.toLowerCase();
 
   return children
     .split(' ')
