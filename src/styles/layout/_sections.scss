@@ -122,7 +122,7 @@ h6 {
       transform: translateY(-5px);
       box-shadow: $light-shadow;
 
-      .iconify {
+      svg {
         color: $secondary;
       }
     }
@@ -136,7 +136,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 10px;
     transition: all 0.3s;
 
     .iconify {
@@ -159,6 +159,8 @@ h6 {
 
 //Pricing
 .pricing-wrap {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   margin-top: 60px;
@@ -171,7 +173,11 @@ h6 {
     box-shadow: $light-shadow;
     margin: 8px;
     padding: 20px;
-    height: 420px;
+    height: 700px;
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .plan-name {
       font-family: $font;
@@ -183,7 +189,7 @@ h6 {
     img {
       display: block;
       max-width: 160px;
-      margin: 0 auto 0 auto;
+      margin: 0 auto;
     }
 
     .price {
@@ -193,16 +199,16 @@ h6 {
       font-size: 2.4rem;
       color: $blue-grey;
 
-      &:before {
-        content: "$";
+      &::before {
+        content: '$';
         position: relative;
         top: -12px;
         left: 0;
         font-size: 1.2rem;
       }
 
-      &:after {
-        content: "per month";
+      &::after {
+        content: 'per month';
         position: absolute;
         bottom: -16px;
         left: 0;
@@ -215,8 +221,12 @@ h6 {
     }
 
     p {
-      padding: 24px 0 16px 0;
+      padding: 12px;
       color: $muted-grey;
+      width: 50%;
+      margin: 0 auto;
+      border-bottom: 1px solid $fade-grey;
+      text-align: left;
     }
 
     .button {

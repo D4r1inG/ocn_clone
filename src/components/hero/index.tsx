@@ -14,7 +14,7 @@ export const Hero = () => {
             <div className="column is-5 landing-caption">
               <h1 className="title is-1 is-bold is-spaced">
                 {t('hero.h1.prefix')}
-                <mark className="text-accent bsb-tpl-highlight">{t('hero.h1.highlight')}</mark>
+                <mark className="text-hightlight">{t('hero.h1.highlight')}</mark>
                 {t('hero.h1.suffix')}
               </h1>
               <p className="subtitle is-5 is-muted">Đồng hành cùng phát triển bền vững của doanh nghiệp.</p>

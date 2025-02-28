@@ -21,8 +21,6 @@ Hamburger menu icon
   top: 2px;
 
   .icon-box-toggle {
-    height: 100%;
-    width: 100%;
     background: transparent;
     position: relative;
     display: block;
@@ -30,12 +28,12 @@ Hamburger menu icon
     height: 30px;
 
     &.active > span.rotate {
-      /*transform*/
-      -webkit-transform: rotate(90deg);
-      -moz-transform: translate(0px, 0px) rotate(90deg);
-      -ms-transform: translate(0px, 0px) rotate(90deg);
-      -o-transform: translate(0px, 0px) rotate(90deg);
-      transform: translate(0px, 0px) rotate(90deg);
+      /* transform */
+      transform: rotate(90deg);
+      transform: translate(0, 0) rotate(90deg);
+      transform: translate(0, 0) rotate(90deg);
+      transform: translate(0, 0) rotate(90deg);
+      transform: translate(0, 0) rotate(90deg);
     }
 
     &.active > span > i.icon-line-center {
@@ -50,12 +48,12 @@ Hamburger menu icon
       left: 50%;
       top: 12px;
 
-      /*transform*/
-      -webkit-transform: rotate(135deg);
-      -moz-transform: translate(0px, 0px) rotate(135deg);
-      -ms-transform: translate(0px, 0px) rotate(135deg);
-      -o-transform: translate(0px, 0px) rotate(135deg);
-      transform: translate(0px, 0px) rotate(135deg);
+      /* transform */
+      transform: rotate(135deg);
+      transform: translate(0, 0) rotate(135deg);
+      transform: translate(0, 0) rotate(135deg);
+      transform: translate(0, 0) rotate(135deg);
+      transform: translate(0, 0) rotate(135deg);
     }
 
     &.active > span > i.icon-line-top {
@@ -63,12 +61,12 @@ Hamburger menu icon
       left: 50%;
       top: 12px;
 
-      /*transform*/
-      -webkit-transform: rotate(45deg);
-      -moz-transform: translate(0px, 0px) rotate(45deg);
-      -ms-transform: translate(0px, 0px) rotate(45deg);
-      -o-transform: translate(0px, 0px) rotate(45deg);
-      transform: translate(0px, 0px) rotate(45deg);
+      /* transform */
+      transform: rotate(45deg);
+      transform: translate(0, 0) rotate(45deg);
+      transform: translate(0, 0) rotate(45deg);
+      transform: translate(0, 0) rotate(45deg);
+      transform: translate(0, 0) rotate(45deg);
     }
   }
 
@@ -80,9 +78,8 @@ Hamburger menu icon
     margin: -1px 0 0 -10px;
     left: 50%;
     top: 11px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 
@@ -94,9 +91,8 @@ Hamburger menu icon
     margin: -3px 0 0 -10px;
     left: 50%;
     top: 7px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 
@@ -108,9 +104,8 @@ Hamburger menu icon
     margin: 2px 0 0 -10px;
     left: 50%;
     top: 14px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 }

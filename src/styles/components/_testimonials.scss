@@ -21,10 +21,9 @@ Testimonials Styles
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.6em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgb(0 0 0 / 15%);
 
   * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -45,16 +44,16 @@ Testimonials Styles
     display: block;
   }
 
-  blockquote:before {
-    font-family: "Material Icons", sans-serif;
-    content: "\e244";
+  blockquote::before {
+    font-family: 'Material Icons', sans-serif;
+    content: '\e244';
     position: absolute;
     font-size: 30px;
     opacity: 0.3;
     font-style: normal;
   }
 
-  blockquote:before {
+  blockquote::before {
     top: 16px;
     left: 16px;
   }

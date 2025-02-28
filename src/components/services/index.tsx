@@ -63,9 +63,10 @@ export const Services = () => {
         <div className="title-wrapper has-text-centered">
           <h2 className="title is-2">
             Bạn sẽ nhận được <br />
-            giải pháp <mark className="text-accent bsb-tpl-highlight">hoàn hảo</mark> với dịch vụ chuyên
-            nghiệp của chúng tôi.
+            giải pháp <mark className="text-hightlight">hoàn hảo</mark> với dịch vụ chuyên nghiệp của chúng
+            tôi.
           </h2>
+          <div className="divider is-centered" />
         </div>
         <div className="feature-cards content-wrapper">
           <div className="columns">

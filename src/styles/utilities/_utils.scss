@@ -87,7 +87,6 @@ h6 {
         display: block;
         top: 52%;
         transform: translateY(-55%);
-        transform: translateY(-55%);
       }
 
       &:hover {
@@ -116,8 +115,45 @@ h6 {
   z-index: 2 !important;
 }
 
+.text-primary {
+  color: $primary !important;
+
+  &.is-bold {
+    font-weight: 600;
+  }
+}
+
+.pos-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pos-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.is-f-col {
+  flex-direction: column;
+}
+
 .light-text {
   color: $white !important;
+}
+
+.light-gray-text {
+  color: $light-grey !important;
+}
+
+.text-hightlight {
+  background: linear-gradient(120deg, $secondary, $secondary);
+  background-position: 0 80%;
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+}
+
+.mb-10 {
+  margin-top: 10px;
 }
 
 .mb-20 {
@@ -130,6 +166,10 @@ h6 {
 
 .mb-60 {
   margin-bottom: 60px;
+}
+
+.mt-10 {
+  margin-top: 10px;
 }
 
 .mt-20 {
@@ -146,6 +186,10 @@ h6 {
 
 .mt-60 {
   margin-top: 60px;
+}
+
+.mt-80 {
+  margin-top: 80px;
 }
 
 .ml-30 {
