@@ -59,7 +59,7 @@ const ImageItem: React.FC<ImageItemProps> = ({ title, category, src }) => {
       }}
     >
       <a href="#!">
-        <img className="img-fluid bsb-scale-up bsb-hover-scale" src={src} alt="" />
+        <img src={src} alt="" />
       </a>
       <figcaption>
         <h3 className="title is-2 is-bold light-text">{title}</h3>

@@ -48,7 +48,7 @@ const BaseHeader: React.FC<BaseHeaderProps> = ({ isScrolled, isAlt }) => {
     >
       <nav id="scrollspyNav" className="container">
         <Link className="navbar-brand" href="/">
-          <img src="./img/branding/ocn-logo.png" className="bsb-tpl-logo" alt="" />
+          <img src="./img/branding/ocn-logo.png" alt="" />
         </Link>
 
         <div className="navbar-menu is-static">

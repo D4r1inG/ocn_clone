@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 
 export interface HeadingType {
   id: string;
@@ -42,7 +42,6 @@ export function useTableOfContent() {
       }
 
       const top = ref.getBoundingClientRect().top + scrollY;
-
       const nextSection = headings[sectionIndex + 1];
       const bottom = (nextSection?.ref?.getBoundingClientRect().top ?? Infinity) + scrollY;
 
@@ -62,6 +61,7 @@ export function useTableOfContent() {
     // check if the visible sections have changed
     const oldVisibleHeadingIds = currentActive.map((s) => s.id);
     const newVisibleHeadingIds = newVisibleSections.map((s) => s.id);
+
     const hasChanged = oldVisibleHeadingIds.join() !== newVisibleHeadingIds.join();
     if (hasChanged) setCurrentActive(newVisibleSections);
   }, [currentActive, headings]);

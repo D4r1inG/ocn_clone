@@ -59,16 +59,13 @@ export const Pricing = () => {
   return (
     <section id="scrollspyPricing" className="section section-feature-grey is-medium">
       <div className="container">
-        <div className="container">
-          <div className="title-wrapper has-text-centered">
-            <h2 className="title is-2">Bảng giá</h2>
-            <h3 className="subtitle is-5 is-muted">
-              Cho phép điều chỉnh linh hoạt nhằm tìm ra gói dịch vụ phù hợp cho hệ thống của bạn.
-            </h3>
-            <div className="divider is-centered" />
-          </div>
+        <div className="title-wrapper has-text-centered">
+          <h2 className="title is-2">Bảng giá</h2>
+          <h3 className="subtitle is-5 is-muted">
+            Cho phép điều chỉnh linh hoạt nhằm tìm ra gói dịch vụ phù hợp cho hệ thống của bạn.
+          </h3>
+          <div className="divider is-centered" />
         </div>
-
         <div className="pricing-wrap">
           {PRICES.map((item, index) => (
             <PriceCard {...item} key={index} />

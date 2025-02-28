@@ -1,8 +1,43 @@
-.fortfolio-row {
+.blog-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+
+  .blog-title {
+    flex-shrink: 0;
+  }
+
+  .content-wrapper {
+    .columns {
+      justify-content: end;
+      gap: 1rem;
+    }
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .entry-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
   figure {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 
     figcaption {
       width: 100%;
@@ -17,9 +52,12 @@
       pointer-events: none;
       z-index: 1;
       transition: all 0.3s;
+      svg {
+        color: $white;
+      }
     }
 
-    a {
+    img {
       display: block;
       transition: transform 0.5s;
       transform: scale3d(1, 1, 1);
@@ -27,7 +65,7 @@
     }
 
     &:hover {
-      a {
+      img {
         transform: scale3d(1.2, 1.2, 1.2);
       }
 
@@ -35,7 +73,7 @@
         background-color: rgb(0 0 0 / 50%);
         opacity: 1;
 
-        h3 {
+        svg {
           animation-name: fadeInLeft;
           animation-duration: 0.5s;
           animation-fill-mode: both;
@@ -48,5 +86,21 @@
         }
       }
     }
+  }
+}
+
+.post-wrapper {
+  padding: 0 1rem;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 5rem;
+
+  .toc {
+    grid-column: span 5 / span 5;
+  }
+
+  .content {
+    grid-column: span 7 / span 7;
   }
 }

@@ -3,13 +3,19 @@ import { Card } from './card';
 
 export const Posts = ({ blogs }) => {
   return (
-    <div className="bsb-tpl-bg-sea-shell">
-      <div className="container py-5">
-        <h1 className="pb-5 text-center">Blogs</h1>
-        <div className="w-full">
-          <div className="row g-4">
+    <div className="section is-medium">
+      <div className="container">
+        <div className="title-wrapper has-text-centered blog-title">
+          <h2 className="title is-2 ">Blogs</h2>
+          <h3 className="subtitle is-5 is-muted">
+            Cập nhật các tin tức mới nhất về hạ tầng công nghệ thông tin.
+          </h3>
+          <div className="divider is-centered" />
+        </div>
+        <div className="content-wrapper">
+          <div className="columns is-multiline">
             {blogs?.map((blog) => (
-              <div key={blog.id} className="col-12 col-lg-6">
+              <div key={blog.id} className="column is-6">
                 <Card content={blog} />
               </div>
             ))}

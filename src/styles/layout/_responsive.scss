@@ -3,6 +3,17 @@ Responsive Styles
 ========================================================================== */
 
 @media (max-width: 767px) {
+  .post-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-image {
+    margin: 10px auto !important;
+    max-width: 350px !important;
+  }
+
   .landing-caption {
     text-align: center;
   }
@@ -42,6 +53,9 @@ Responsive Styles
   }
 
   .title {
+    &.is-1 {
+      font-size: 2.5rem !important;
+    }
     &.section-title {
       font-size: 2rem !important;
     }
@@ -83,6 +97,12 @@ Responsive Styles
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .post-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .navbar {
     .navbar-brand {
       .navbar-burger {
@@ -207,6 +227,12 @@ Responsive Styles
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .post-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .navbar-menu {
     .navbar-end {
       a {

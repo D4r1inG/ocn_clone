@@ -26,6 +26,8 @@ Navbar
   //Brand
   .navbar-brand {
     min-height: 5rem;
+    display: flex;
+    align-items: center;
 
     img {
       max-height: 50px !important;

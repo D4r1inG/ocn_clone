@@ -1,0 +1,66 @@
+.toc-main {
+  position: sticky;
+  top: 80px;
+
+  .toc-nav {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+
+    .toc-item {
+      margin-left: 26px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-left: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0.5rem;
+      z-index: 4;
+
+      width: 4px;
+      height: 100%;
+
+      &.main {
+        background-color: $primary;
+      }
+
+      &.secondary {
+        z-index: 5;
+        background-color: $muted-grey;
+      }
+    }
+  }
+
+  .toc-link {
+    text-decoration: none;
+    color: #333;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.blog-heading {
+  position: relative;
+  .toc-anchor {
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:hover .toc-anchor {
+    opacity: 1;
+  }
+}

@@ -8,6 +8,7 @@ type HeadingProps = {
   as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   id?: string;
   hidden?: boolean;
+  className?: string;
 };
 
 function getId(children: string) {
@@ -19,14 +20,14 @@ function getId(children: string) {
     .join('-');
 }
 
-export const Heading: React.FC<HeadingProps> = ({ as: Element, children, id, ...props }) => {
+export const Heading: React.FC<HeadingProps> = ({ as: Element, children, id, className, ...props }) => {
   const eleId = id ?? getId(children);
 
   return (
-    <Element id={eleId} className={cn('position-relative blog-heading')} {...props}>
+    <Element id={eleId} className={cn(' blog-heading', className)} {...props}>
       <Link
         href={`#${eleId}`}
-        className="position-absolute top-50 translate-middle toc-anchor"
+        className="toc-anchor"
         style={{
           left: '-1.5rem',
         }}

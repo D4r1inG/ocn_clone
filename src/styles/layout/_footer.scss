@@ -6,17 +6,64 @@ footer.footer-dark {
   background: $blue-grey;
   color: $white;
 
-  .columns {
-    margin-top: 35px;
-  }
-
-  .footer-logo {
-    img {
-      height: 40px;
+  .footer-bottom {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    .footer-social {
+      ul {
+        display: flex;
+        gap: 20px;
+        li {
+          a {
+            color: $white;
+            transition: all 0.5s;
+            &:hover {
+              color: $secondary;
+            }
+          }
+        }
+      }
     }
   }
 
+  .columns {
+    margin-top: 35px;
+    gap: 60px;
+  }
+
+  .footer-logo {
+    width: fit-content;
+    padding: 20px;
+    border-radius: 8px;
+    background: $section-grey;
+  }
+
   .footer-column {
+    .footer-input-group {
+      margin-top: 20px;
+
+      input {
+        background: $section-grey;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 1rem;
+        width: 100%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: all 0.5s;
+
+        &::placeholder {
+          color: $light-blue-grey;
+        }
+      }
+
+      button {
+        float: right;
+      }
+    }
+
     .footer-header {
       h3 {
         font-weight: 500;

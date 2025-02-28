@@ -11,10 +11,10 @@ export const Hero = () => {
       <div className="hero-body">
         <div className="container">
           <div className="columns is-vcentered">
-            <div className="column is-5 landing-caption">
+            <div className="column is-6 landing-caption">
               <h1 className="title is-1 is-bold is-spaced">
                 {t('hero.h1.prefix')}
-                <mark className="text-hightlight">{t('hero.h1.highlight')}</mark>
+                <mark className="text-hightlight main">{t('hero.h1.highlight')}</mark>
                 {t('hero.h1.suffix')}
               </h1>
               <p className="subtitle is-5 is-muted">Đồng hành cùng phát triển bền vững của doanh nghiệp.</p>
@@ -27,7 +27,8 @@ export const Hero = () => {
                 </button>
               </div>
             </div>
-            <div className="column is-7">
+
+            <div className="column is-6">
               <img
                 className="hero-image"
                 loading="lazy"

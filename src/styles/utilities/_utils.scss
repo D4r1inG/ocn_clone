@@ -1,5 +1,5 @@
-body {
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 .h1,
@@ -19,6 +19,37 @@ h6 {
   line-height: 1.2;
   margin-bottom: 0.5rem;
   margin-top: 0;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-abolute {
+  position: absolute !important;
+}
+
+header.masthead {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-color: $muted-grey;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $dark-grey;
+  opacity: 0.5;
 }
 
 .material-icons {
@@ -123,6 +154,10 @@ h6 {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 .pos-left {
   display: flex;
   justify-content: flex-start;
@@ -145,11 +180,21 @@ h6 {
   color: $light-grey !important;
 }
 
+.muted-text {
+  color: $muted-grey !important;
+  &:hover {
+    color: $dark-grey !important;
+  }
+}
+
 .text-hightlight {
   background: linear-gradient(120deg, $secondary, $secondary);
   background-position: 0 80%;
   background-repeat: no-repeat;
   background-size: 100% 20%;
+  &.main {
+    margin: 0 12px;
+  }
 }
 
 .mb-10 {

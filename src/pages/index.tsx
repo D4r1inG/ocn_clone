@@ -11,8 +11,10 @@ import { Testimonial } from '@/components/testimonial';
 import { Blogs } from '@/components/blogs';
 import { HeroAlt } from '@/components/hero/HeroAlt';
 import { Contact } from '@/components/contact';
+import { read } from '@/utils/file-helper';
+import matter from 'gray-matter';
 
-export default function Home(): ReactNode {
+export default function Home({ blogs }): ReactNode {
   return (
     <>
       <Hero />
@@ -24,7 +26,7 @@ export default function Home(): ReactNode {
         <Team />
         <Pricing />
         <Testimonial />
-        <Blogs />
+        <Blogs blogs={blogs} />
         <Contact />
       </main>
       <Footer />
@@ -32,8 +34,26 @@ export default function Home(): ReactNode {
   );
 }
 
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale ?? 'vi', ['common'])),
-  },
-});
+export const getStaticProps = async ({ locale }) => {
+  const fileNames = read(`/public/contents/${locale}`, 'dir');
+
+  const blogPosts = [];
+
+  for (const fileName of fileNames) {
+    const rawContent = read(`/public/contents/${locale}/${fileName}`, 'file') as string;
+
+    const { data: frontmatter } = matter(rawContent);
+
+    blogPosts.push({
+      slug: fileName.replace('.mdx', ''),
+      ...frontmatter,
+    });
+  }
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'vi', ['common'])),
+      blogs: blogPosts.sort((p1, p2) => (p1.date < p2.date ? 1 : -1)),
+    },
+  };
+};
