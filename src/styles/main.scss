@@ -4,7 +4,6 @@ Main SCSS file / Fresh
 
 @import 'abstracts/colors';
 @import 'abstracts/animations';
-
 @import 'layout/navbar';
 @import 'layout/sidebar';
 @import 'layout/sections';
@@ -16,5 +15,6 @@ Main SCSS file / Fresh
 @import 'components/cards';
 @import 'components/forms';
 @import 'components/testimonials';
+@import 'components/portfolio';
 @import 'utilities/utils';
 @import 'layout/responsive';

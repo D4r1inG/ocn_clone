@@ -56,7 +56,7 @@ Sidebar Styles
         }
 
         &.path2 {
-          stroke-dasharray: 400px, 600px, 0px;
+          stroke-dasharray: 400px, 600px, 0;
         }
 
         &.path3 {
@@ -178,11 +178,10 @@ Sidebar Styles
               span {
                 color: $secondary;
 
-                &:after {
+                &::after {
                   color: $secondary;
-                  -moz-transform: rotate(90deg);
-                  -o-transform: rotate(90deg);
-                  -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg);
+                  transform: rotate(90deg);
                   transform: rotate(90deg);
                 }
               }
@@ -194,7 +193,7 @@ Sidebar Styles
           }
 
           ul {
-            padding: 0px;
+            padding: 0;
 
             li {
               a {
@@ -216,11 +215,11 @@ Sidebar Styles
 
           span {
             &.material-icons {
-              &:after {
+              &::after {
                 position: absolute;
                 top: 14px;
                 right: 30px;
-                content: "\e5cc";
+                content: '\e5cc';
                 color: $white;
                 transition: all 0.5s;
                 font-weight: 200 !important;

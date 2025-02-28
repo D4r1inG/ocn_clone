@@ -17,6 +17,9 @@ Cards and Card content styles
   border-radius: 3px;
   margin: 0 auto;
   padding: 2.5rem;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
 
   .card-title h4 {
     font-family: $font-heading;
@@ -26,7 +29,7 @@ Cards and Card content styles
   }
 
   .card-icon {
-    img {
+    svg {
       display: block;
       height: 80px;
       width: 80px;
@@ -40,6 +43,13 @@ Cards and Card content styles
 
     p {
       color: $muted-grey;
+      line-height: 1.2em;
+      height: 4.8em;
+      width: 100%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
     }
   }
 
@@ -59,7 +69,6 @@ Cards and Card content styles
 
 // Flex Card
 .flex-card {
-  position: relative;
   background-color: #fff;
   border: 0;
   border-radius: 0.1875rem;
@@ -70,7 +79,7 @@ Cards and Card content styles
   margin-bottom: 20px;
 
   &.raised {
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
   }
 
   .tabs {
