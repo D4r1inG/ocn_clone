@@ -2,7 +2,6 @@ import type { AppProps } from 'next/app';
 import { ReactElement, ReactNode } from 'react';
 import { NextPage } from 'next';
 import ErrorBoundary from '@/components/ErrorBoundary';
-import 'bulma/bulma.scss';
 import '@/styles/main.scss';
 import { appWithTranslation } from 'next-i18next';
 import Head from 'next/head';

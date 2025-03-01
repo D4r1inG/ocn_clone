@@ -22,7 +22,7 @@ export const Blogs = ({ blogs }) => {
           <div className="content-wrapper">
             <div className="columns is-multiline">
               {blogs?.map((blog) => (
-                <div key={blog.id} className="column is-5">
+                <div key={blog.slug} className="column is-5">
                   <Card content={blog} />
                 </div>
               ))}

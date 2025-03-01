@@ -13,6 +13,7 @@ import { HeroAlt } from '@/components/hero/HeroAlt';
 import { Contact } from '@/components/contact';
 import { read } from '@/utils/file-helper';
 import matter from 'gray-matter';
+import { SideBtn } from '@/components/common/SideBtn';
 
 export default function Home({ blogs }): ReactNode {
   return (
@@ -30,6 +31,7 @@ export default function Home({ blogs }): ReactNode {
         <Contact />
       </main>
       <Footer />
+      <SideBtn />
     </>
   );
 }

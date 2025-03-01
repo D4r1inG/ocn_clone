@@ -4,6 +4,7 @@ Main SCSS file / Fresh
 
 @import 'abstracts/colors';
 @import 'abstracts/animations';
+@import '../../node_modules/bulma//bulma.scss';
 @import 'layout/navbar';
 @import 'layout/sidebar';
 @import 'layout/sections';
@@ -19,5 +20,6 @@ Main SCSS file / Fresh
 @import 'components/blogs';
 @import 'components/contact';
 @import 'components/_toc';
+@import 'components/_sideBtn';
 @import 'utilities/utils';
 @import 'layout/responsive';

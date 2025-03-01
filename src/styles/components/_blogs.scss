@@ -26,6 +26,7 @@ article {
     display: flex;
     gap: 8px;
     align-items: center;
+
     li {
       display: flex;
       align-items: center;
@@ -52,6 +53,7 @@ article {
       pointer-events: none;
       z-index: 1;
       transition: all 0.3s;
+
       svg {
         color: $white;
       }
