@@ -16,9 +16,7 @@ const ImageItem: React.FC<ImageItemProps> = ({ title, category, src }) => {
         position: 'absolute',
       }}
     >
-      <a href="#!">
-        <img src={src} alt="" />
-      </a>
+      <img src={src} alt="" />
       <figcaption>
         <h3 className="title is-2 is-bold light-text text-center">{title}</h3>
         <div className="light-gray-text">{category}</div>
@@ -33,7 +31,7 @@ export const Portfolio = () => {
   useEffect(() => {
     new MiniMasonry({
       container: '.fortfolio-row',
-      baseWidth: 400,
+      baseWidth: 330,
       gutter: 10,
     });
   });
@@ -42,42 +40,42 @@ export const Portfolio = () => {
     {
       title: t('feat.1'),
       category: 'Computing',
-      src: '/img/portfolio/1.jpg',
+      src: '/img/portfolio/project-landscape-1.jpg',
     },
     {
       title: t('feat.2'),
       category: 'Firewall',
-      src: '/img/portfolio/2.jpg',
+      src: '/img/portfolio/project-portrait-1.jpg',
     },
     {
       title: t('feat.3'),
       category: 'Solution',
-      src: '/img/portfolio/3.jpg',
+      src: '/img/portfolio/project-landscape-2.jpg',
     },
     {
       title: t('feat.4'),
       category: 'IoT',
-      src: '/img/portfolio/4.jpg',
+      src: '/img/portfolio/project-portrait-2.jpg',
     },
     {
       title: t('feat.5'),
       category: 'Hardware',
-      src: '/img/portfolio/5.jpg',
+      src: '/img/portfolio/project-portrait-3.jpg',
     },
     {
       title: t('feat.6'),
       category: 'Service',
-      src: '/img/portfolio/6.jpg',
+      src: '/img/portfolio/project-portrait-4.jpg',
     },
     {
       title: t('feat.7'),
       category: 'Design',
-      src: '/img/portfolio/7.jpg',
+      src: '/img/portfolio/project-landscape-3.jpg',
     },
     {
       title: t('feat.8'),
       category: 'Disaster Recovery',
-      src: '/img/portfolio/8.jpg',
+      src: '/img/portfolio/project-landscape-4.jpg',
     },
   ];
 

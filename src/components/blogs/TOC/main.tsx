@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import cn from 'classnames';
-import { CircleDot } from 'lucide-react';
 import { HeadingType, useTableOfContent } from '@/hooks/useTableOfContent';
 
 const SPRING = {
@@ -18,47 +17,45 @@ const TableOfContent = () => {
     (headings.findIndex(({ id }) => id === activeIds.at(-1)) / (headings.length - 1)) * 100;
 
   return (
-    <aside className="toc-main">
-      <nav className="p-5 toc-nav">
-        <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: headings.length && 1,
-          }}
-        >
-          <header className="title is-5 text-center">Table of contents</header>
-          <ul>
-            <div className="bg-black progress-bar main" />
-            <motion.div
-              className="progress-bar secondary"
-              initial={{
-                y: 0,
-              }}
-              animate={{
-                y: percentageRead === 100 ? '100%' : `${currentHeight}px`,
-              }}
-              transition={{
-                // Last item should be delayed
-                delay: headings.length - activeIndex === 2 ? 0.5 : undefined,
-                ...SPRING,
-              }}
-            ></motion.div>
-            {headings.map((heading) => {
-              return (
-                <TocItem
-                  key={heading.id}
-                  getHeadingsHeight={getHeadingsHeight}
-                  heading={heading}
-                  activeIds={activeIds}
-                />
-              );
-            })}
-          </ul>
-        </motion.div>
-      </nav>
-    </aside>
+    <nav className="p-5 toc-nav">
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: headings.length && 1,
+        }}
+      >
+        <header className="title is-5 text-center">Table of contents</header>
+        <ul>
+          <div className="bg-black progress-bar main" />
+          <motion.div
+            className="progress-bar secondary"
+            initial={{
+              y: 0,
+            }}
+            animate={{
+              y: percentageRead === 100 ? '100%' : `${currentHeight}px`,
+            }}
+            transition={{
+              // Last item should be delayed
+              delay: headings.length - activeIndex === 2 ? 0.5 : undefined,
+              ...SPRING,
+            }}
+          ></motion.div>
+          {headings.map((heading) => {
+            return (
+              <TocItem
+                key={heading.id}
+                getHeadingsHeight={getHeadingsHeight}
+                heading={heading}
+                activeIds={activeIds}
+              />
+            );
+          })}
+        </ul>
+      </motion.div>
+    </nav>
   );
 };
 
@@ -89,7 +86,7 @@ const TocItem: React.FC<TocItemProps> = ({ heading, activeIds, getHeadingsHeight
         'py-1': heading.level > 2,
       })}
     >
-      <Link
+      <a
         className={cn('toc-link', {
           'muted-text': !activeIds.includes(heading.id),
         })}
@@ -100,7 +97,7 @@ const TocItem: React.FC<TocItemProps> = ({ heading, activeIds, getHeadingsHeight
         href={anchorId}
       >
         {heading.text}
-      </Link>
+      </a>
     </li>
   );
 };

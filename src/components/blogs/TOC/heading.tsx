@@ -1,5 +1,4 @@
 import { Link as LinkIcon } from 'lucide-react';
-import Link from 'next/link';
 import React from 'react';
 import cn from 'classnames';
 
@@ -25,7 +24,7 @@ export const Heading: React.FC<HeadingProps> = ({ as: Element, children, id, cla
 
   return (
     <Element id={eleId} className={cn(' blog-heading', className)} {...props}>
-      <Link
+      <a
         href={`#${eleId}`}
         className="toc-anchor"
         style={{
@@ -33,7 +32,7 @@ export const Heading: React.FC<HeadingProps> = ({ as: Element, children, id, cla
         }}
       >
         <LinkIcon />
-      </Link>
+      </a>
       {children}
     </Element>
   );

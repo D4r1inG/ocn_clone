@@ -18,6 +18,9 @@ Classes to change the feel of bulma buttons
     font-size: 1rem;
     font-weight: 500;
     height: 44px;
+    color: $dark-grey;
+    background-color: $light-grey;
+    border-color: $muted-grey;
   }
 
   &.is-clear {

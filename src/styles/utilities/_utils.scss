@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background: $white;
 }
 
 .h1,
@@ -201,6 +202,10 @@ header.masthead .overlay {
   &.main {
     margin: 0 12px;
   }
+}
+
+.text-black {
+  color: $dark-grey !important;
 }
 
 .mb-10 {

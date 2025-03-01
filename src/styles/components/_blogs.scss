@@ -96,11 +96,7 @@ article {
   display: grid;
   position: relative;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 5rem;
-
-  .toc {
-    grid-column: span 5 / span 5;
-  }
+  gap: 3rem;
 
   .content {
     grid-column: span 7 / span 7;

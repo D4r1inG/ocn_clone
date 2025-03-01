@@ -144,7 +144,7 @@ Navbar
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 2000;
   width: 100%;
   height: 100%;
 
@@ -158,7 +158,7 @@ Navbar
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 101;
+    z-index: 2001;
     cursor: pointer;
     color: $muted-grey;
   }
@@ -167,7 +167,7 @@ Navbar
     position: absolute;
     inset: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 2000;
     backdrop-filter: blur(24px) brightness(60%);
   }
 
@@ -180,7 +180,7 @@ Navbar
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 101;
+    z-index: 2001;
 
     ul {
       display: flex;

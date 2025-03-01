@@ -16,7 +16,7 @@ export const SideBtn = () => {
     const currentLocale = router.locale;
     const locale = currentLocale === 'en' ? 'vi' : 'en';
 
-    router.push(router.pathname, router.pathname, { locale, scroll: false });
+    router.push(router.asPath, router.asPath, { locale, scroll: false });
     setOpen(false);
   };
 

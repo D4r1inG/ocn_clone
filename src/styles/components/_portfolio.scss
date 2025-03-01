@@ -3,6 +3,8 @@
     border-radius: 8px;
     position: relative;
     overflow: hidden;
+    min-width: 350px;
+    max-width: 436px;
 
     figcaption {
       width: 100%;
@@ -19,7 +21,7 @@
       transition: all 0.3s;
     }
 
-    a {
+    img {
       display: block;
       transition: transform 0.5s;
       transform: scale3d(1, 1, 1);
@@ -27,7 +29,7 @@
     }
 
     &:hover {
-      a {
+      img {
         transform: scale3d(1.2, 1.2, 1.2);
       }
 

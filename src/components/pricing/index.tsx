@@ -32,7 +32,7 @@ const PriceCard: React.FC<PriceCardProps> = ({ title, features, hotFeatures, ico
       </div>
 
       <a
-        className={cn('button is-fullwidth is-bold', {
+        className={cn('button cta is-fullwidth is-bold', {
           'primary-btn raised is-bold': isBusiness,
         })}
       >
