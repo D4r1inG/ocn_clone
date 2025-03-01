@@ -1,20 +1,21 @@
 import Link from 'next/link';
 import React from 'react';
 import { Card } from './card';
+import { useTranslation } from 'next-i18next';
 
 export const Blogs = ({ blogs }) => {
+  const { t } = useTranslation('blog');
+
   return (
     <section id="scrollspyBlog" className="section section-feature-grey is-medium">
       <div className="container">
         <div className="blog-main">
           <div className="title-wrapper has-text-centered blog-title">
             <h2 className="title is-2 ">Blogs</h2>
-            <h3 className="subtitle is-5 is-muted">
-              Cập nhật các tin tức mới nhất về hạ tầng công nghệ thông tin.
-            </h3>
+            <h3 className="subtitle is-5 is-muted">{t('title')}</h3>
             <div className="divider is-centered" />
             <Link href="/blogs" className="button signup-button secondary-btn raised mt-40">
-              Truy cập
+              {t('btn')}
             </Link>
           </div>
 

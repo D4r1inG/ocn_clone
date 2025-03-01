@@ -8,15 +8,5 @@
     "pricing": "Pricing",
     "blogs": "Blogs",
     "contact": "Contact"
-  },
-  "hero": {
-    "h1": {
-      "prefix": "We provide comprehensive solutions",
-      "highlight": "to meet all needs.",
-      "suffix": ""
-    },
-    "p": "Accompany sustainable development of businesses.",
-    "btn1:": "Learn more",
-    "btn2": "Contact"
   }
 }

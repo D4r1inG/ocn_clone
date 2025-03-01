@@ -1,7 +1,10 @@
 import React from 'react';
 import { Facebook, Instagram, Logo, Twitter, Youtube } from '../icons';
+import { useTranslation } from 'next-i18next';
 
 export const Footer = () => {
+  const { t } = useTranslation('footer');
+
   return (
     <footer className="footer footer-dark">
       <div className="container">
@@ -14,11 +17,9 @@ export const Footer = () => {
           <div className="column">
             <div className="footer-column">
               <div className="footer-header">
-                <h3>Liên hệ</h3>
+                <h3>{t('contact.title')}</h3>
               </div>
-              <p>
-                Đăng ký để nhận các thông tin về các chương trình khuyến mãi, và các thay đổi về công nghệ.
-              </p>
+              <p>{t('contact.content')} </p>
               <ul className="link-list">
                 <li>
                   <a href="tel:+15057922430">(+84)376332287</a>
@@ -32,20 +33,20 @@ export const Footer = () => {
           <div className="column">
             <div className="footer-column">
               <div className="footer-header">
-                <h3>Liên kết</h3>
+                <h3>{t('link.name')}</h3>
               </div>
               <ul className="link-list">
                 <li>
-                  <a href="#">Về chúng tôi</a>
+                  <a href="#">{t('link.1')}</a>
                 </li>
                 <li>
-                  <a href="#">Liên hệ</a>
+                  <a href="#">{t('link.2')}</a>
                 </li>
                 <li>
-                  <a href="#">Chính sách dịch vụ</a>
+                  <a href="#">{t('link.3')}</a>
                 </li>
                 <li>
-                  <a href="#">Điều khoản sử dụng</a>
+                  <a href="#">{t('link.4')}</a>
                 </li>
               </ul>
             </div>
@@ -53,14 +54,12 @@ export const Footer = () => {
           <div className="column">
             <div className="footer-column">
               <div className="footer-header">
-                <h3>Cập nhật thông tin </h3>
+                <h3>{t('info.title')}</h3>
               </div>
-              <p>
-                Đăng ký để nhận các thông tin về các chương trình khuyến mãi, và các thay đổi về công nghệ.
-              </p>
+              <p>{t('info.content')} </p>
               <div className="footer-input-group">
                 <input type="email" placeholder="Email" />
-                <button className="button btn-align-md primary-btn raised">Đăng ký</button>
+                <button className="button btn-align-md primary-btn raised">{t('info.btn')}</button>
               </div>
             </div>
           </div>
@@ -72,7 +71,7 @@ export const Footer = () => {
         <div className="border-top mt-40 footer-bottom">
           <div className="footer-bottom-content">
             <div>© 2025. All Rights Reserved.</div>
-            <div className="text-secondary mb-10 light-gray-text">
+            <div className=" mb-10 light-gray-text">
               Built by{' '}
               <a href="https://ocn.com.vn/" className="text-primary">
                 OCN

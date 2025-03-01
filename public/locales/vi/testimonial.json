@@ -1,0 +1,17 @@
+{
+  "title": "Sản phẩm của chúng tôi xây dựng dựa trên trải nghiệm của khách hàng",
+  "comments": {
+    "1": {
+      "name": "Nguyễn Văn Hùng",
+      "content": "Hệ thống linh hoạt và tiết kiệm chi phí đáng kể. Đội ngũ kỹ thuật hỗ trợ nhanh chóng, giải quyết sự cố kịp thời."
+    },
+    "2": {
+      "name": "Trần Minh Anh",
+      "content": "Các chuyên gia phân tích kỹ nhu cầu, đưa ra giải pháp phù hợp và hỗ trợ triển khai từng bước. Nhờ đó, hệ thống vận hành trơn tru ngay từ đầu mà không gặp rủi ro lớn."
+    },
+    "3": {
+      "name": "Lê Quốc Bảo",
+      "content": "Giải pháp firewall được triển khai bài bản, giúp bảo vệ hệ thống khỏi tấn công mạng hiệu quả. Đội ngũ hỗ trợ 24/7, luôn sẵn sàng xử lý sự cố ngay khi cần."
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": {
+    "prefix": "Bạn sẽ nhận được \n giải pháp",
+    "highlight": "hoàn hảo",
+    "suffix": "với dịch vụ chuyên nghiệp của chúng tôi."
+  },
+  "feat": {
+    "cloud": {
+      "title": "OCN.Cloud",
+      "description": "Giải pháp điện toán đám mây linh hoạt, giúp doanh nghiệp tối ưu hiệu suất và mở rộng quy mô dễ dàng."
+    },
+    "firewall": {
+      "title": "OCN.Firewall",
+      "description": "Hệ thống tường lửa mạnh mẽ, bảo vệ dữ liệu và ngăn chặn các mối đe dọa an ninh mạng."
+    },
+    "consult": {
+      "title": "Tư vấn triển khai",
+      "description": "Hỗ trợ thiết kế, xây dựng và triển khai hạ tầng công nghệ thông tin hiệu quả."
+    },
+    "service": {
+      "title": "Quản lý dịch vụ",
+      "description": "Giám sát, bảo trì và tối ưu hệ thống CNTT, đảm bảo hoạt động ổn định và liên tục."
+    },
+    "rescue": {
+      "title": "Ứng cứu sự cố",
+      "description": "Phản ứng nhanh chóng, khắc phục sự cố kịp thời để giảm thiểu gián đoạn hoạt động."
+    },
+    "hardware": {
+      "title": "Phần cứng & Thiết bị",
+      "description": "Cung cấp và tích hợp các thiết bị công nghệ cao, đảm bảo hiệu suất và độ bền cho hạ tầng CNTT doanh nghiệp."
+    }
+  },
+  "btn": "Chi tiết"
+}

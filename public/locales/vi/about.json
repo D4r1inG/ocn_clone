@@ -1,0 +1,26 @@
+{
+  "title": {
+    "prefix": "Cách chúng tôi xây dựng đội ngũ và sản phẩm nhằm đáp ứng nhu cầu của bạn.",
+    "highlight": "Sau đây là những lý do hàng đầu để bạn chọn chúng tôi chăm sóc cho hạ tầng của bạn"
+  },
+  "reasons": {
+    "1": {
+      "title": "Chi phí tối ưu",
+      "description": "Chúng tôi cam kết mang đến giải pháp tiết kiệm tối đa bằng cách tối ưu hóa tài nguyên, giảm thiểu lãng phí và áp dụng công nghệ tiên tiến. Nhờ đó, khách hàng có thể đạt hiệu suất cao với mức đầu tư hợp lý."
+    },
+    "2": {
+      "title": "Đội ngũ kỹ thuật nhiều kinh nghiệm",
+      "description": "Với nhiều năm làm việc trong ngành, đội ngũ kỹ thuật viên của chúng tôi có chuyên môn sâu rộng, khả năng xử lý vấn đề nhanh chóng và luôn cập nhật công nghệ mới nhất. Điều này đảm bảo hệ thống của khách hàng hoạt động ổn định."
+    },
+    "3": {
+      "title": "Đa dịch vụ",
+      "description": "Chúng tôi cung cấp nhiều dịch vụ từ tư vấn, thiết kế, triển khai đến bảo trì, hỗ trợ kỹ thuật. Nhờ đó, khách hàng có thể tìm thấy tất cả giải pháp cần thiết tại một nơi, tiết kiệm thời gian và công sức quản lý."
+    }
+  },
+  "achivements": {
+    "1": "Khách hàng",
+    "2": "Bài toán đã giải quyết",
+    "3": "Dự án hoàn thành",
+    "4": "Chứng chỉ chứng nhận"
+  }
+}

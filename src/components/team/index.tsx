@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 
 const TEAM = [
   {
@@ -45,13 +46,15 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, role, image }) => {
 };
 
 export const Team = () => {
+  const { t } = useTranslation('team');
+
   return (
     <section id="scrollspyTeam" className="section is-medium">
       <div className="container">
         <div className="title-wrapper has-text-centered">
           <h2 className="title is-2">
-            Đội ngũ <br />
-            <mark className="text-hightlight">sáng tạo, nhiều kinh nghiệm</mark>
+            {t('title.prefix')} <br />
+            <mark className="text-hightlight">{t('title.highlight')}</mark>
           </h2>
           <div className="divider is-centered" />
         </div>

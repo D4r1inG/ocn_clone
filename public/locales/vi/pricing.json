@@ -1,0 +1,31 @@
+{
+  "title": {
+    "prefix": "Bảng giá",
+    "highlight": "Cho phép điều chỉnh linh hoạt nhằm tìm ra gói dịch vụ phù hợp cho hệ thống của bạn."
+  },
+  "packs": {
+    "1": {
+      "name": "Gói cơ bản",
+      "feat": {
+        "1": "Tư vấn triển khai",
+        "2": "Ứng cứu sự cố",
+        "3": "Backup dự phòng",
+        "4": "Hỗ trợ qua chat/email"
+      }
+    },
+    "2": {
+      "name": "Gói nâng cao",
+      "feat": {
+        "1": "Tư vấn triển khai",
+        "2": "Ứng cứu sự cố",
+        "3": "Backup dự phòng",
+        "4": "Tối ưu hạ tầng",
+        "5": "Hỗ trợ trực tiếp"
+      }
+    }
+  },
+  "price": "Liên hệ",
+  "unit": "VND/tháng",
+  "btn": "Chi tiết",
+  "btn2": "Chọn"
+}

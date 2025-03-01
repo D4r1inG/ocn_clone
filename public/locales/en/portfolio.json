@@ -1,0 +1,17 @@
+{
+  "title": {
+    "prefix": "Take a look at our projects to",
+    "highlight": "start",
+    "suffix": "your new journey."
+  },
+  "feat": {
+    "1": "Infrastructure",
+    "2": "Internal Firewall",
+    "3": "Solution Consulting",
+    "4": "IOT Devices",
+    "5": "Server Devices",
+    "6": "Service Management",
+    "7": "Deployment Consulting",
+    "8": "Incident Response"
+  }
+}

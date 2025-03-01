@@ -1,0 +1,26 @@
+{
+  "title": {
+    "prefix": "How we build our team and products to meet your needs.",
+    "highlight": "Here are the top reasons to choose us to take care of your infrastructure"
+  },
+  "reasons": {
+    "1": {
+      "title": "Optimal Cost",
+      "description": "We are committed to providing maximum savings solutions by optimizing resources, minimizing waste, and applying advanced technology. This allows customers to achieve high performance with reasonable investment."
+    },
+    "2": {
+      "title": "Experienced Technical Team",
+      "description": "With many years of industry experience, our technicians have extensive expertise, quick problem-solving skills, and always stay updated with the latest technology. This ensures the stable operation of customers' systems."
+    },
+    "3": {
+      "title": "Diverse Services",
+      "description": "We offer a wide range of services from consulting, designing, deploying to maintenance, and technical support. This allows customers to find all the necessary solutions in one place, saving time and management effort."
+    }
+  },
+  "achivements": {
+    "1": "Customers",
+    "2": "Problems Solved",
+    "3": "Projects Completed",
+    "4": "Certificates"
+  }
+}

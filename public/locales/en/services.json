@@ -1,0 +1,34 @@
+{
+  "title": {
+    "prefix": "You will receive \n the",
+    "highlight": "perfect",
+    "suffix": "solution with our professional services."
+  },
+  "feat": {
+    "cloud": {
+      "title": "OCN.Cloud",
+      "description": "Flexible cloud computing solutions that help businesses optimize performance and scale easily."
+    },
+    "firewall": {
+      "title": "OCN.Firewall",
+      "description": "Powerful firewall system that protects data and prevents cybersecurity threats."
+    },
+    "consult": {
+      "title": "Deployment Consulting",
+      "description": "Support in designing, building, and deploying efficient IT infrastructure."
+    },
+    "service": {
+      "title": "Service Management",
+      "description": "Monitoring, maintaining, and optimizing IT systems to ensure stable and continuous operation."
+    },
+    "rescue": {
+      "title": "Incident Response",
+      "description": "Quick response and timely issue resolution to minimize operational disruptions."
+    },
+    "hardware": {
+      "title": "Hardware & Devices",
+      "description": "Providing and integrating high-tech devices to ensure performance and durability for enterprise IT infrastructure."
+    }
+  },
+  "btn": "Details"
+}

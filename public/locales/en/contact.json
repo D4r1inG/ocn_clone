@@ -1,0 +1,12 @@
+{
+  "title": {
+    "prefix": "Contact",
+    "highlight": " We are always looking for opportunities to collaborate and assist customers. If you are interested in working with us, please contact us through one of the following ways."
+  },
+  "location": {
+    "title": "Address",
+    "detail": "4th Floor, N01-T2 Building, Diplomatic Corps Area, Xuan Tao Ward, Bac Tu Liem District, Hanoi City, Vietnam"
+  },
+  "phone": "Phone Number",
+  "email": "Email"
+}

@@ -1,0 +1,17 @@
+{
+  "title": {
+    "prefix": " Cùng xem qua các dự án của chúng tôi để",
+    "highlight": "bắt đầu",
+    "suffix": "hành trình mới của bạn."
+  },
+  "feat": {
+    "1": "Hạ tầng ảo hóa",
+    "2": "Tường lửa nội bộ",
+    "3": "Tu vấn giải pháp",
+    "4": "Thiết bị IOT",
+    "5": "Thiết bị Server",
+    "6": "Quản lý dịch vụ",
+    "7": "Tư vấn triển khai",
+    "8": "Ứng cứu sự cố"
+  }
+}

@@ -52,7 +52,20 @@ export const getStaticProps = async ({ locale }) => {
 
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'vi', ['common'])),
+      ...(await serverSideTranslations(locale ?? 'vi', [
+        'common',
+        'hero',
+        'heroAlt',
+        'services',
+        'portfolio',
+        'about',
+        'team',
+        'pricing',
+        'testimonial',
+        'blog',
+        'contact',
+        'footer',
+      ])),
       blogs: blogPosts.sort((p1, p2) => (p1.date < p2.date ? 1 : -1)),
     },
   };

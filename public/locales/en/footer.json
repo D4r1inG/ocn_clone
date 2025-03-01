@@ -1,0 +1,18 @@
+{
+  "contact": {
+    "title": "Contact",
+    "content": "4th Floor, N01-T2 Building, Diplomatic Corps Area, Xuan Tao Ward, Bac Tu Liem District, Hanoi City, Vietnam"
+  },
+  "link": {
+    "name": "Links",
+    "1": "About Us",
+    "2": "Contact",
+    "3": "Service Policy",
+    "4": "Terms of Use"
+  },
+  "info": {
+    "title": "Stay Updated",
+    "content": "Subscribe to receive information about promotions and technology updates",
+    "btn": "Subscribe"
+  }
+}

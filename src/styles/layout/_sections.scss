@@ -227,6 +227,9 @@ h6 {
       margin: 0 auto;
       border-bottom: 1px solid $fade-grey;
       text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
 
     .button {

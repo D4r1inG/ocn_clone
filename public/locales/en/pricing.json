@@ -1,0 +1,31 @@
+{
+  "title": {
+    "prefix": "Pricing",
+    "highlight": "Allows flexible adjustments to find the right service package for your system."
+  },
+  "packs": {
+    "1": {
+      "name": "Basic Package",
+      "feat": {
+        "1": "Deployment Consulting",
+        "2": "Incident Response",
+        "3": "Backup",
+        "4": "Support via chat/email"
+      }
+    },
+    "2": {
+      "name": "Advanced Package",
+      "feat": {
+        "1": "Deployment Consulting",
+        "2": "Incident Response",
+        "3": "Backup",
+        "4": "Infrastructure Optimization",
+        "5": "Direct Support"
+      }
+    }
+  },
+  "price": "Contact",
+  "unit": "VND/month",
+  "btn": "Details",
+  "btn2": "Choose"
+}

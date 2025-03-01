@@ -154,6 +154,10 @@ header.masthead .overlay {
   }
 }
 
+.text-secondary {
+  color: $secondary !important;
+}
+
 .text-center {
   text-align: center;
 }
@@ -182,6 +186,7 @@ header.masthead .overlay {
 
 .muted-text {
   color: $muted-grey !important;
+
   &:hover {
     color: $dark-grey !important;
   }
@@ -192,6 +197,7 @@ header.masthead .overlay {
   background-position: 0 80%;
   background-repeat: no-repeat;
   background-size: 100% 20%;
+
   &.main {
     margin: 0 12px;
   }
