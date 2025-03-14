@@ -1,17 +1,27 @@
 {
   "title": {
-    "prefix": "Take a look at our projects to",
+    "prefix": "Take a look at our services to",
     "highlight": "start",
     "suffix": "your new journey."
   },
   "feat": {
-    "1": "Infrastructure",
-    "2": "Internal Firewall",
-    "3": "Solution Consulting",
-    "4": "IOT Devices",
-    "5": "Server Devices",
-    "6": "Service Management",
-    "7": "Deployment Consulting",
-    "8": "Incident Response"
+    "1": "CCTV & Wifi",
+    "2": "Computer Network",
+    "3": "Server Infrastructure",
+    "4": "Container Solutions",
+    "5": "API Management & Integration",
+    "6": "CI/CD and DevSecOps",
+    "7": "Virtualization & Cloud",
+    "8": "AI Platform"
+  },
+  "content": {
+    "1": "OCN specializes in building and deploying smart security camera systems integrated with recognition technology, automatic alerts, and real-time image data analysis. With exceptional capabilities in deployment at factories, industrial zones, offices, and large, complex buildings, we ensure to provide high-speed, wide-area Wi-Fi solutions with stable coverage even in the most challenging environments.",
+    "2": "OCN specializes in consulting and deploying computer network infrastructure that meets international standards, ensuring maximum information security. With extensive experience in executing large and complex projects, we help customers build stable, highly secure network systems that can flexibly expand according to the development needs of the business, optimizing operational costs and managing effectively.",
+    "3": "OCN has outstanding strengths in deploying high-performance, stable, and secure server infrastructure solutions. With experience in implementing many large, complex server projects from leading technology companies such as Dell, Cisco, HP, IBM, etc., our team of engineers has deep knowledge and is always ready to advise and design the most optimal infrastructure solutions, helping businesses ensure continuous operation, security, and easy expansion when needed.",
+    "4": "OCN specializes in consulting and deploying leading container technologies such as Kubernetes and OpenShift from major companies, and has a particular strength in deploying open-source solutions. With a team of experienced engineers in implementing large, complex, and scalable container infrastructures, we commit to helping businesses optimize operations, reduce costs, increase performance, and be ready to expand when needed.",
+    "5": "OCN specializes in consulting secure, high-efficiency API management solutions, supporting easy integration with existing systems. With strengths in deploying large, complex infrastructures, we commit to enhancing the system's scalability, ensuring it handles large loads well, meeting the rapid development needs of businesses in the digital era.",
+    "6": "OCN provides comprehensive consulting and deployment solutions, helping businesses accelerate the software development process quickly, continuously, and securely from start to finish. We apply the most modern tools, combining tight security from the development stage, minimizing security risks, helping businesses shorten the time to market, improve software quality, and optimize operational resources, significantly increasing competitive advantage in the market.",
+    "7": "OCN specializes in consulting and deploying comprehensive virtualization and cloud computing solutions (Private, Public, Hybrid) with flexible scalability, easily meeting the requirements from small to very large businesses. We apply leading technologies to build stable, highly secure Cloud infrastructure, reducing operational costs and increasing performance.",
+    "8": "OCN provides specialized platforms, supporting businesses to effectively harness the power of artificial intelligence, promoting innovation and optimizing business. We have experience in deploying many large, complex AI Platform projects, using advanced technologies from leading companies such as NVIDIA, TensorFlow, and PyTorch. Our AI solutions help businesses automate processes, accurately forecast analysis, optimize operational performance, and quickly create strong competitive advantages in the market."
   }
 }

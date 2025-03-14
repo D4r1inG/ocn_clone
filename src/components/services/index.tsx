@@ -44,7 +44,7 @@ const FeatureCard = ({ icon, title, description }) => {
       >
         <MouseIcon className="h-6 w-6" />
 
-        <div className="ml-4 mt-1 rounded-[4px] bg-gray-100 px-2 py-0.5 text-gray-800 max-w-[300px]">
+        <div className="ml-4 mt-1 rounded-[4px] bg-gray-100 p-4 text-gray-700 max-w-[300px] shadow-md">
           {description}
         </div>
       </Cursor>

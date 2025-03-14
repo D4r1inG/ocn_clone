@@ -1,17 +1,27 @@
 {
   "title": {
-    "prefix": " Cùng xem qua các dự án của chúng tôi để",
+    "prefix": "Cùng xem qua các dịch vụ của chúng tôi để",
     "highlight": "bắt đầu",
     "suffix": "hành trình mới của bạn."
   },
   "feat": {
-    "1": "Hạ tầng ảo hóa",
-    "2": "Tường lửa nội bộ",
-    "3": "Tu vấn giải pháp",
-    "4": "Thiết bị IOT",
-    "5": "Thiết bị Server",
-    "6": "Quản lý dịch vụ",
-    "7": "Tư vấn triển khai",
-    "8": "Ứng cứu sự cố"
+    "1": "CCTV & Wifi",
+    "2": "Mạng máy tính",
+    "3": "Hạ tầng máy chủ",
+    "4": "Giải pháp Container",
+    "5": "Quản lý & Tích hợp API",
+    "6": "CI/CD và DevSecOps",
+    "7": "Ảo hóa & Cloud",
+    "8": "AI Platform"
+  },
+  "content": {
+    "1": " OCN chuyên xây dựng và triển khai hệ thống camera an ninh thông minh tích hợp công nghệ nhận diện, cảnh báo tự động và phân tích dữ liệu hình ảnh theo thời gian thực. Với năng lực đặc biệt trong việc triển khai tại các nhà máy, khu công nghiệp, văn phòng và các tòa nhà lớn, phức tạp, chúng tôi đảm bảo cung cấp giải pháp Wi-Fi diện rộng tốc độ cao, phủ sóng ổn định ngay cả trong những môi trường khó khăn nhất.",
+    "2": "OCN chuyên tư vấn và triển khai hạ tầng mạng máy tính đạt tiêu chuẩn quốc tế, đảm bảo an toàn thông tin tối đa. Với kinh nghiệm sâu rộng trong việc thực hiện các dự án lớn và phức tạp, chúng tôi giúp khách hàng xây dựng hệ thống mạng ổn định, bảo mật cao, có khả năng mở rộng linh hoạt theo nhu cầu phát triển của doanh nghiệp, giúp tối ưu hóa chi phí vận hành và quản lý hiệu quả.",
+    "3": "OCN có thế mạnh vượt trội trong việc triển khai các giải pháp hạ tầng máy chủ hiệu suất cao, ổn định và an toàn. Với kinh nghiệm triển khai nhiều dự án máy chủ lớn, phức tạp từ các hãng công nghệ hàng đầu như Dell, Cisco, HP, IBM,... đội ngũ kỹ sư của chúng tôi am hiểu sâu rộng và luôn sẵn sàng tư vấn, thiết kế các giải pháp hạ tầng tối ưu nhất, giúp doanh nghiệp đảm bảo khả năng vận hành liên tục, bảo mật và dễ dàng mở rộng khi cần thiết.",
+    "4": " OCN chuyên tư vấn và triển khai công nghệ container hàng đầu như Kubernetes và OpenShift từ các hãng lớn, đồng thời có thế mạnh đặc biệt trong việc triển khai các giải pháp mã nguồn mở (open-source). Với đội ngũ kỹ sư giàu kinh nghiệm trong việc thực hiện các hạ tầng container lớn, phức tạp và khả năng mở rộng linh hoạt, chúng tôi cam kết giúp doanh nghiệp tối ưu hóa vận hành, giảm chi phí, tăng cường hiệu suất và sẵn sàng mở rộng khi cần thiết.",
+    "5": "OCN chuyên tư vấn các giải pháp quản lý API bảo mật, hiệu quả cao, hỗ trợ tích hợp dễ dàng với các hệ thống sẵn có. Với thế mạnh trong việc triển khai các hạ tầng lớn, phức tạp, chúng tôi cam kết nâng cao khả năng mở rộng (scale) của hệ thống, đảm bảo xử lý lượng tải lớn, đáp ứng tốt các nhu cầu phát triển nhanh chóng của doanh nghiệp trong kỷ nguyên số.",
+    "6": " OCN cung cấp giải pháp tư vấn và triển khai toàn diện, giúp doanh nghiệp thúc đẩy quy trình phát triển phần mềm nhanh chóng, liên tục và bảo mật từ đầu đến cuối. Chúng tôi ứng dụng các công cụ hiện đại nhất, kết hợp bảo mật chặt chẽ ngay từ giai đoạn phát triển, giảm thiểu tối đa rủi ro bảo mật, giúp doanh nghiệp rút ngắn thời gian đưa sản phẩm ra thị trường, nâng cao chất lượng phần mềm và tối ưu hóa nguồn lực vận hành, gia tăng đáng kể lợi thế cạnh tranh trên thị trường.",
+    "7": "OCN chuyên tư vấn và triển khai các giải pháp hạ tầng ảo hóa và điện toán đám mây toàn diện (Private, Public, Hybrid) với khả năng mở rộng linh hoạt, đáp ứng dễ dàng các yêu cầu từ nhỏ đến cực lớn của doanh nghiệp. Chúng tôi ứng dụng các công nghệ hàng đầu để xây dựng hạ tầng Cloud ổn định, bảo mật cao, giảm chi phí vận hành và tăng hiệu suất.",
+    "8": "OCN cung cấp các nền tảng chuyên biệt, hỗ trợ doanh nghiệp khai thác hiệu quả sức mạnh của trí tuệ nhân tạo, thúc đẩy đổi mới sáng tạo và tối ưu hóa kinh doanh. Chúng tôi có kinh nghiệm triển khai nhiều dự án AI Platform lớn, phức tạp, sử dụng các công nghệ tiên tiến từ các hãng hàng đầu thế giới như NVIDIA, TensorFlow, và PyTorch. Các giải pháp AI của chúng tôi giúp doanh nghiệp tự động hóa quy trình, phân tích dự báo chính xác, tối ưu hiệu suất vận hành và nhanh chóng tạo ra lợi thế cạnh tranh mạnh mẽ trên thị trường."
   }
 }
