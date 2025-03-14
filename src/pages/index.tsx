@@ -14,6 +14,7 @@ import { Contact } from '@/components/contact';
 import { read } from '@/utils/file-helper';
 import matter from 'gray-matter';
 import { SideBtn } from '@/components/common/SideBtn';
+import { AboutAlt } from '@/components/about/about-alt';
 
 export default function Home({ blogs }): ReactNode {
   return (
@@ -23,7 +24,7 @@ export default function Home({ blogs }): ReactNode {
         <Services />
         <HeroAlt />
         <Portfolio />
-        <About />
+        <AboutAlt />
         <Team />
         <Pricing />
         <Testimonial />

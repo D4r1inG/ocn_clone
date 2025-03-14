@@ -19,7 +19,7 @@ const PriceCard: React.FC<PriceCardProps> = ({ title, features, hotFeatures, ico
     <div className="feature-card is-pricing has-text-centered">
       <div>
         <h3 className="plan-name">{title}</h3>
-        <div>{icon}</div>
+        <div className="flex justify-center">{icon}</div>
         <div className="title is-2 mb-0">{t('price')}</div>
         <div className="mb-20">{t('unit')}</div>
         <div className="pos-left is-f-col">

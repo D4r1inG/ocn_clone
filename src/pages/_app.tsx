@@ -24,6 +24,10 @@ const emptyInitialI18NextConfig = {
   },
 };
 
+interface HeadProps {
+  children?: ReactNode;
+}
+
 function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
 

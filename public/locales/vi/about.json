@@ -1,6 +1,6 @@
 {
   "title": {
-    "prefix": "Cách chúng tôi xây dựng đội ngũ và sản phẩm nhằm đáp ứng nhu cầu của bạn.",
+    "prefix": "Sản phẩm của chúng tôi nhằm đáp ứng nhu cầu của bạn.",
     "highlight": "Sau đây là những lý do hàng đầu để bạn chọn chúng tôi chăm sóc cho hạ tầng của bạn"
   },
   "reasons": {
@@ -22,5 +22,23 @@
     "2": "Bài toán đã giải quyết",
     "3": "Dự án hoàn thành",
     "4": "Chứng chỉ chứng nhận"
+  },
+  "product": {
+    "1": {
+      "title": "OCN-Hypervisor",
+      "description": " Nền tảng ảo hóa thế hệ mới, sở hữu đầy đủ tính năng quản lý máy ảo tiên tiến, giao diện thân thiện, dễ dàng sử dụng ngay cả với những người dùng không chuyên sâu về kỹ thuật. Được thiết kế tối ưu hóa hiệu suất, khả năng mở rộng cao và tiết kiệm tối đa chi phí vận hành. Đặc biệt, khách hàng nhận được sự hỗ trợ trực tiếp, nhanh chóng từ đội ngũ kỹ sư Việt Nam giàu kinh nghiệm, giúp doanh nghiệp dễ dàng ứng dụng công nghệ, đảm bảo hiệu năng vượt trội và ổn định trong mọi tình huống."
+    },
+    "2": {
+      "title": "OCN-Cloud",
+      "description": "Dịch vụ đám mây thế hệ mới, cam kết SLA lên tới 99.99%, ứng dụng công nghệ siêu hội tụ (HCI) tiên tiến, đảm bảo hiệu suất cao, độ ổn định vượt trội, và khả năng mở rộng linh hoạt. OCN-Cloud mang đến cho doanh nghiệp giải pháp mạnh mẽ với chi phí vận hành thấp, dễ dàng tích hợp cùng các hệ thống AI, PaaS, SaaS, giúp doanh nghiệp nhanh chóng thích ứng và tận dụng tối đa lợi thế từ chuyển đổi số. Đặc biệt, OCN-Cloud cam kết bảo mật dữ liệu tối đa, tuân thủ nghiêm ngặt các quy định tại Việt Nam, đồng thời hỗ trợ kỹ thuật nhanh chóng từ đội ngũ kỹ sư Việt Nam."
+    },
+    "3": {
+      "title": "OCN-Firewall",
+      "description": "Nền tảng bảo mật tiên tiến sử dụng công nghệ Distributed Firewall và mô hình bảo mật Zero Trust, bảo vệ mạng doanh nghiệp một cách toàn diện, tự động hóa cao, giảm tối đa các rủi ro an ninh mạng mà không gây gián đoạn hay ảnh hưởng đáng kể đến hiệu suất hệ thống. Được phát triển tuân thủ chặt chẽ các tiêu chuẩn bảo mật quốc tế hàng đầu như ISO và PCIDSS, OCN-Firewall giúp doanh nghiệp Việt an tâm vận hành và mở rộng hệ thống công nghệ một cách an toàn, linh hoạt và hiệu quả."
+    },
+    "4": {
+      "title": "OCN-Bigdata",
+      "description": "Trong bối cảnh thế giới đang chứng kiến sự bùng nổ mạnh mẽ của trí tuệ nhân tạo (AI), việc lưu trữ, xử lý và tận dụng dữ liệu lớn là nhu cầu cấp thiết đối với mọi doanh nghiệp. OCN-Bigdata là giải pháp vượt trội, mang đến khả năng lưu trữ tối ưu, độ ổn định cao, và hiệu suất xử lý vượt trội, giúp doanh nghiệp dễ dàng khai thác dữ liệu hiệu quả với chi phí thấp. Giải pháp của chúng tôi không chỉ hỗ trợ tích hợp linh hoạt với các nền tảng AI tiên tiến, mà còn giúp doanh nghiệp đưa ra quyết định chiến lược nhanh chóng, chính xác và tạo nên lợi thế cạnh tranh trong thị trường công nghệ hiện đại."
+    }
   }
 }
