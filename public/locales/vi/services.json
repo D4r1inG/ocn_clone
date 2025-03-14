@@ -1,33 +1,29 @@
 {
   "title": {
-    "prefix": "Bạn sẽ nhận được \n giải pháp",
-    "highlight": "hoàn hảo",
-    "suffix": "với dịch vụ chuyên nghiệp của chúng tôi."
+    "prefix": "Lĩnh vực, dịch vụ",
+    "highlight": "chuyên nghiệp",
+    "suffix": "chúng tôi cung cấp."
   },
   "feat": {
     "cloud": {
-      "title": "OCN.Cloud",
-      "description": "Giải pháp điện toán đám mây linh hoạt, giúp doanh nghiệp tối ưu hiệu suất và mở rộng quy mô dễ dàng."
+      "title": "Phần cứng",
+      "description": "Đa dạng sản phẩm chất lượng cao, đáp ứng toàn diện nhu cầu về máy chủ, thiết bị mạng, PC, laptop, màn hình, camera giám sát,… mà còn am hiểu sâu sắc nhu cầu và bài toán riêng của từng doanh nghiệp, hỗ trợ khách hàng lựa chọn sản phẩm phù hợp, tối ưu nhất cả về hiệu năng lẫn chi phí vận hành"
     },
     "firewall": {
-      "title": "OCN.Firewall",
-      "description": "Hệ thống tường lửa mạnh mẽ, bảo vệ dữ liệu và ngăn chặn các mối đe dọa an ninh mạng."
+      "title": "Bảo mật",
+      "description": "Các giải pháp antivirus, bảo vệ endpoint mạnh mẽ, chống các loại malware, ransomware, đảm bảo an toàn dữ liệu cho doanh nghiệp, hỗ trợ quản lý tập trung hiệu quả."
     },
     "consult": {
-      "title": "Tư vấn triển khai",
-      "description": "Hỗ trợ thiết kế, xây dựng và triển khai hạ tầng công nghệ thông tin hiệu quả."
+      "title": "Giám sát hệ thống",
+      "description": "Giám sát hệ thống mạng, máy chủ, ứng dụng theo thời gian thực, phát hiện và xử lý sự cố nhanh chóng, giúp doanh nghiệp tối ưu hóa hiệu suất hoạt động CNTT."
     },
     "service": {
-      "title": "Quản lý dịch vụ",
-      "description": "Giám sát, bảo trì và tối ưu hệ thống CNTT, đảm bảo hoạt động ổn định và liên tục."
+      "title": "Hệ điều hành",
+      "description": "Hệ điều hành phổ biến, ổn định, bảo mật, phù hợp với đa dạng quy mô doanh nghiệp."
     },
     "rescue": {
-      "title": "Ứng cứu sự cố",
-      "description": "Phản ứng nhanh chóng, khắc phục sự cố kịp thời để giảm thiểu gián đoạn hoạt động."
-    },
-    "hardware": {
-      "title": "Phần cứng & Thiết bị",
-      "description": "Cung cấp và tích hợp các thiết bị công nghệ cao, đảm bảo hiệu suất và độ bền cho hạ tầng CNTT doanh nghiệp."
+      "title": "Ảo hóa",
+      "description": "Nền tảng ảo hóa hàng đầu thế giới, giúp tối ưu hóa sử dụng tài nguyên, tăng hiệu suất, đảm bảo tính sẵn sàng và linh hoạt."
     }
   },
   "btn": "Chi tiết"

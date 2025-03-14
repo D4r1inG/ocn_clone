@@ -1,33 +1,29 @@
 {
   "title": {
-    "prefix": "You will receive \n the",
-    "highlight": "perfect",
-    "suffix": "solution with our professional services."
+    "prefix": "Field, service",
+    "highlight": "professional",
+    "suffix": "we provide."
   },
   "feat": {
     "cloud": {
-      "title": "OCN.Cloud",
-      "description": "Flexible cloud computing solutions that help businesses optimize performance and scale easily."
+      "title": "Hardware",
+      "description": "Diverse high-quality products, comprehensively meeting the needs for servers, network devices, PCs, laptops, monitors, surveillance cameras, etc., while deeply understanding the unique needs and challenges of each business, supporting customers in choosing the most suitable and optimized products in terms of both performance and operational costs."
     },
     "firewall": {
-      "title": "OCN.Firewall",
-      "description": "Powerful firewall system that protects data and prevents cybersecurity threats."
+      "title": "Security",
+      "description": "Strong antivirus solutions, endpoint protection, against various types of malware, ransomware, ensuring data safety for businesses, effectively supporting centralized management."
     },
     "consult": {
-      "title": "Deployment Consulting",
-      "description": "Support in designing, building, and deploying efficient IT infrastructure."
+      "title": "System Monitoring",
+      "description": "Real-time monitoring of network systems, servers, applications, quickly detecting and handling incidents, helping businesses optimize IT operational efficiency."
     },
     "service": {
-      "title": "Service Management",
-      "description": "Monitoring, maintaining, and optimizing IT systems to ensure stable and continuous operation."
+      "title": "Operating System",
+      "description": "Popular, stable, secure operating systems, suitable for various business scales."
     },
     "rescue": {
-      "title": "Incident Response",
-      "description": "Quick response and timely issue resolution to minimize operational disruptions."
-    },
-    "hardware": {
-      "title": "Hardware & Devices",
-      "description": "Providing and integrating high-tech devices to ensure performance and durability for enterprise IT infrastructure."
+      "title": "Virtualization",
+      "description": "Leading virtualization platform in the world, helping to optimize resource usage, increase performance, ensure availability and flexibility."
     }
   },
   "btn": "Details"

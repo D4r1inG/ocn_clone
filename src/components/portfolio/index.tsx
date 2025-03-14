@@ -29,11 +29,13 @@ export const Portfolio = () => {
   const { t } = useTranslation('portfolio');
 
   useEffect(() => {
-    new MiniMasonry({
-      container: '.fortfolio-row',
-      baseWidth: 330,
-      gutter: 10,
-    });
+    setTimeout(() => {
+      new MiniMasonry({
+        container: '.fortfolio-row',
+        baseWidth: 330,
+        gutter: 10,
+      });
+    }, 300);
   });
 
   const IMG_METADATA = [

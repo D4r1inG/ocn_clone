@@ -1,25 +1,57 @@
-import React from 'react';
-import { Airplane, Alarm, ArrowRight, Aspect, Cloud } from '../icons';
+import React, { SVGProps } from 'react';
 import { useTranslation } from 'next-i18next';
+import { Cursor } from '../common/Cursor';
+import { Boxes, HardDrive, Lock, Monitor, ScanEye } from 'lucide-react';
+
+const MouseIcon = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={26} height={31} fill="none" {...props}>
+      <g clipPath="url(#a)">
+        <path
+          fill={'#c4c4c4'}
+          fillRule="evenodd"
+          stroke={'#fff'}
+          strokeLinecap="square"
+          strokeWidth={2}
+          d="M21.993 14.425 2.549 2.935l4.444 23.108 4.653-10.002z"
+          clipRule="evenodd"
+        />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill={'#22c55e'} d="M0 0h26v31H0z" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
 
 const FeatureCard = ({ icon, title, description }) => {
-  const { t } = useTranslation('services');
-
   return (
     <div className="feature-card is-bordered has-text-centered is-feature-reveal">
+      <Cursor
+        attachToParent
+        variants={{
+          initial: { scale: 0.3, opacity: 0 },
+          animate: { scale: 1, opacity: 1 },
+          exit: { scale: 0.3, opacity: 0 },
+        }}
+        transition={{
+          ease: 'easeInOut',
+          duration: 0.15,
+        }}
+        className="left-12 top-4"
+      >
+        <MouseIcon className="h-6 w-6" />
+
+        <div className="ml-4 mt-1 rounded-[4px] bg-gray-100 px-2 py-0.5 text-gray-800 max-w-[300px]">
+          {description}
+        </div>
+      </Cursor>
       <div className="card-title">
         <h4>{title}</h4>
       </div>
       <div className="card-icon">{icon}</div>
-      <div className="card-text">
-        <p>{description}</p>
-      </div>
-      <div className="card-action">
-        <a href="#" className="button btn-align-md primary-btn raised">
-          {t('btn')}
-          <ArrowRight className="bi bi-arrow-right-short" />
-        </a>
-      </div>
     </div>
   );
 };
@@ -29,34 +61,29 @@ export const Services = () => {
 
   const FEATURES = [
     {
-      icon: <Cloud className="bi bi-cloud" />,
+      icon: <HardDrive />,
       title: t('feat.cloud.title'),
       description: t('feat.cloud.description'),
     },
     {
-      icon: <Aspect className="bi bi-aspect-ratio" />,
+      icon: <Lock />,
       title: t('feat.firewall.title'),
       description: t('feat.firewall.description'),
     },
     {
-      icon: <Airplane className="bi bi-airplane-engines" />,
+      icon: <ScanEye />,
       title: t('feat.consult.title'),
       description: t('feat.consult.description'),
     },
     {
-      icon: <Alarm className="bi bi-alarm" />,
+      icon: <Monitor />,
       title: t('feat.service.title'),
       description: t('feat.service.description'),
     },
     {
-      icon: <Alarm className="bi bi-alarm" />,
+      icon: <Boxes />,
       title: t('feat.rescue.title'),
       description: t('feat.rescue.description'),
-    },
-    {
-      icon: <Alarm className="bi bi-alarm" />,
-      title: t('feat.hardware.title'),
-      description: t('feat.hardware.description'),
     },
   ];
 
@@ -82,7 +109,7 @@ export const Services = () => {
               </div>
             ))}
           </div>
-          <div className="columns">
+          <div className="columns justify-center">
             {FEATURES.slice(3).map((feature, index) => (
               <div className="column is-4" key={index}>
                 <FeatureCard {...feature} />

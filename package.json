@@ -33,21 +33,25 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^15.4.1",
+    "tailwind-merge": "^3.0.2",
     "typescript": "^5.1.6"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
     "eslint": "^8.46.0",
     "eslint-config-next": "^13.4.19",
     "eslint-config-prettier": "^8.6.0",
     "lint-staged": "^13.1.2",
     "pathmodify": "^0.5.0",
+    "postcss": "^8.5.3",
     "prettier": "^2.8.4",
     "sass": "^1.58.2",
     "stylelint": "^15.1.0",
     "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-standard-scss": "^7.0.1"
+    "stylelint-config-standard-scss": "^7.0.1",
+    "tailwindcss": "^3.4.17"
   },
   "lint-staged": {
     "*.{js,ts,tsx,css,scss}": [
