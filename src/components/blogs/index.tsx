@@ -14,7 +14,7 @@ export const Blogs = ({ blogs }) => {
             <h2 className="title is-2 ">Blogs</h2>
             <h3 className="subtitle is-5 is-muted my-2">{t('title')}</h3>
             <div className="divider is-centered" />
-            <Link href="/blogs" className="button signup-button secondary-btn raised mt-40">
+            <Link href="/blogs" className="button cta primary-btn mt-40">
               {t('btn')}
             </Link>
           </div>

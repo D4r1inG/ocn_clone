@@ -77,7 +77,7 @@ export const Services = () => {
                 __html: t('title.prefix').replace('\n', '<br />'),
               }}
             />{' '}
-            <mark className="text-hightlight">{t('title.highlight')}</mark> {t('title.suffix')}
+            {t('title.highlight')} {t('title.suffix')}
           </h2>
           <div className="divider is-centered" />
         </div>

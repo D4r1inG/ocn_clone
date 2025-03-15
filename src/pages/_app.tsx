@@ -24,18 +24,26 @@ const emptyInitialI18NextConfig = {
   },
 };
 
-interface HeadProps {
-  children?: ReactNode;
-}
+const HeadCom = Head as any;
 
 function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   return (
     <>
-      {/* <Head>
-        <title>ocn.com.vn</title>
-      </Head> */}
+      <HeadCom>
+        <title>OCN - Cloud Platform</title>
+        <meta
+          name="keywords"
+          content="Cloud Platform, cloud, server, vps, iot, firewall, sass, software company"
+        />
+        <meta name="description" content="On Cloud Nine - OCN The CloudPlatform space" />
+        <meta property="og:site_name" content="OCN" />
+        <meta property="og:url" content="https://ocn.com.vn/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="OCN - Cloud Platform" />
+      </HeadCom>
+
       <ErrorBoundary>{getLayout(<Component {...pageProps} />)}</ErrorBoundary>
     </>
   );

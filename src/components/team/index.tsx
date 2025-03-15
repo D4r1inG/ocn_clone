@@ -56,7 +56,7 @@ export const Team = () => {
         <div className="title-wrapper has-text-centered">
           <h2 className="title is-2">
             {t('title.prefix')} <br />
-            <mark className="text-hightlight">{t('title.highlight')}</mark>
+            {t('title.highlight')}
           </h2>
           <div className="divider is-centered" />
         </div>

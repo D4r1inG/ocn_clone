@@ -116,17 +116,16 @@ export const Portfolio = () => {
       src: '/img/portfolio/container.png',
     },
     {
-      title: t('feat.1'),
-      category: 'Computing',
-      content: t('content.1'),
-      src: '/img/portfolio/cctv.png',
-    },
-
-    {
       title: t('feat.5'),
       category: 'Hardware',
       content: t('content.5'),
       src: '/img/portfolio/api.png',
+    },
+    {
+      title: t('feat.1'),
+      category: 'Computing',
+      content: t('content.1'),
+      src: '/img/portfolio/cctv.png',
     },
   ];
 
@@ -135,8 +134,7 @@ export const Portfolio = () => {
       <div className="container">
         <div className="title-wrapper has-text-centered">
           <h2 className="title is-2">
-            {t('title.prefix')} <mark className="text-hightlight"> {t('title.highlight')}</mark>{' '}
-            {t('title.suffix')}
+            {t('title.prefix')} {t('title.highlight')} {t('title.suffix')}
           </h2>
           <div className="divider is-centered" />
         </div>
