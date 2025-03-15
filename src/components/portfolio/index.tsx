@@ -36,9 +36,9 @@ const ImageItem: React.FC<ImageItemProps> = ({ title, category, src, content }) 
         className="relative flex max-w-full flex-col overflow-hidden border"
       >
         <MorphingDialogImage src={src} alt="" className="h-[200px] lg:h-[300px] w-full object-cover" />
-        <div className="flex grow flex-col w-full px-3 py-2 absolute bottom-0 left-0 bg-black/40">
-          <MorphingDialogTitle className="text-gray-100 font-bold">{title}</MorphingDialogTitle>
-          <MorphingDialogSubtitle className="text-gray-100 text-sm">{category}</MorphingDialogSubtitle>
+        <div className="flex grow flex-col w-full px-3 py-2 absolute bottom-0 left-0 bg-black/70">
+          <MorphingDialogTitle className="text-gray-100/90 font-bold">{title}</MorphingDialogTitle>
+          <MorphingDialogSubtitle className="text-gray-100/90 text-sm">{category}</MorphingDialogSubtitle>
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -77,49 +77,49 @@ export const Portfolio = () => {
       title: t('feat.1'),
       category: 'Computing',
       content: t('content.1'),
-      src: '/img/portfolio/project-landscape-1.jpg',
+      src: '/img/portfolio/cctv.png',
     },
     {
       title: t('feat.2'),
       category: 'Firewall',
       content: t('content.2'),
-      src: '/img/portfolio/project-portrait-1.jpg',
+      src: '/img/portfolio/network.png',
     },
     {
       title: t('feat.3'),
       category: 'Solution',
       content: t('content.3'),
-      src: '/img/portfolio/project-landscape-2.jpg',
+      src: '/img/portfolio/infra.png',
     },
     {
       title: t('feat.4'),
       category: 'IoT',
       content: t('content.4'),
-      src: '/img/portfolio/project-portrait-2.jpg',
+      src: '/img/portfolio/container.png',
     },
     {
       title: t('feat.5'),
       category: 'Hardware',
       content: t('content.5'),
-      src: '/img/portfolio/project-portrait-3.jpg',
+      src: '/img/portfolio/api.png',
     },
     {
       title: t('feat.6'),
       category: 'Service',
       content: t('content.6'),
-      src: '/img/portfolio/project-portrait-4.jpg',
+      src: '/img/portfolio/devops.png',
     },
     {
       title: t('feat.7'),
       category: 'Design',
       content: t('content.7'),
-      src: '/img/portfolio/project-landscape-3.jpg',
+      src: '/img/portfolio/cloud.png',
     },
     {
       title: t('feat.8'),
       category: 'Disaster Recovery',
       content: t('content.8'),
-      src: '/img/portfolio/project-landscape-4.jpg',
+      src: '/img/portfolio/AI.png',
     },
   ];
 

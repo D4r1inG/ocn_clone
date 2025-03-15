@@ -16,7 +16,7 @@ export const Contact = () => {
               <h2 className="title is-2">{t('title.prefix')}</h2>
               <div className="divider is-centered" />
             </div>
-            <p className="lead fs-4 mb-5 text-center">{t('title.highlight')}</p>
+            <p className="lead fs-4 mb-5 text-center text-gray-700 mt-4">{t('title.highlight')}</p>
             <div className="contact-info">
               <div className="contact-info-item">
                 <div className="text-primary">

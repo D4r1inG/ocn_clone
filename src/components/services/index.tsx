@@ -21,11 +21,11 @@ const FeatureCard = ({ icon, title, description, index }) => {
       viewport={{ once: true }}
       whileHover={{
         y: -4,
-        borderColor: 'transparent',
+        borderColor: '#fff',
         boxShadow: '0 20px 15px -12px rgba(0, 0, 0, 0.25)',
         transition: { duration: 0.3 },
       }}
-      className="is-bordered border border-gray-100 border-solid p-6 rounded-2xl"
+      className="is-bordered border-2 border-gray-200 border-solid p-6 rounded-2xl"
     >
       <div className="card-icon text-black mb-4">{icon}</div>
       <h4 className="font-bold text-2xl w-fit whitespace-nowrap">{title}</h4>

@@ -72,7 +72,7 @@ export const Pricing = () => {
       <div className="container">
         <div className="title-wrapper has-text-centered">
           <h2 className="title is-2">{t('title.prefix')}</h2>
-          <h3 className="subtitle is-5 is-muted">{t('title.highlight')}</h3>
+          <h3 className="subtitle is-5 is-muted my-2">{t('title.highlight')}</h3>
           <div className="divider is-centered" />
         </div>
         <div className="pricing-wrap">
