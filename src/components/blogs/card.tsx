@@ -27,7 +27,7 @@ export const Card: React.FC<IProps> = ({ content }) => {
           <div className="light-gray-text">Chi tiết</div>
         </figcaption>
       </figure>
-      <Link href={`/blogs/${slug}`} className="title is-5 m-0">
+      <Link href={`/blogs/${slug}`} className="title is-5 my-1">
         {title}
       </Link>
       <ul className="entry-meta">

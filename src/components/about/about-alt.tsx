@@ -42,11 +42,13 @@ export const AboutAlt = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="title-wrapper has-text-centered">
-          <h2 className="title is-2">{t('title.prefix')}</h2>
-          <h3 className="subtitle is-5 is-muted mt-20">{t('title.highlight')} </h3>
-          <div className="divider is-centered" />
+      <div className="section is-medium">
+        <div className="container">
+          <div className="title-wrapper has-text-centered">
+            <h2 className="title is-2">{t('title.prefix')}</h2>
+            <h3 className="subtitle is-5 is-muted mt-20">{t('title.highlight')} </h3>
+            <div className="divider is-centered" />
+          </div>
         </div>
       </div>
       <div ref={ref} className="relative mt-16">
@@ -94,7 +96,7 @@ const Card: React.FC<CardProps> = ({ position, card, scrollYProgress, length }) 
     >
       <card.Icon className={cn('w-20 h-20 mb-8')} />
       <h3 className="mb-6 text-center text-4xl font-semibold md:text-6xl">
-        {isOddCard ? <mark className="text-hightlight">{card.title}</mark> : card.title}
+        <mark className="text-hightlight">{card.title}</mark>
       </h3>
       <p className="mb-8 w-[80%] mx-auto text-center text-sm md:text-base">{card.description}</p>
     </motion.div>

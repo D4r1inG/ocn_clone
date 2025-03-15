@@ -17,9 +17,9 @@ export const Hero = () => {
                 <mark className="text-hightlight main">{t('title.highlight')}</mark>
                 {t('title.suffix')}
               </h1>
-              <p className="subtitle is-5 is-muted mb-5"> {t('p')}</p>
+              <p className="subtitle is-5 is-muted mt-3 mb-8"> {t('p')}</p>
               <div>
-                <button type="button" className="button cta primary-btn raised mr-2">
+                <button type="button" className="button cta primary-btn raised mr-4">
                   {t('btn1')}
                 </button>
                 <button type="button" className="button cta">
