@@ -49,10 +49,11 @@ Navbar
   //Navbar items
   .navbar-item {
     color: $muted-grey;
+    background-color: transparent !important;
 
     &.is-secondary {
       &:hover {
-        color: $secondary !important;
+        color: $primary !important;
       }
     }
 

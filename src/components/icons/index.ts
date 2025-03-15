@@ -30,3 +30,4 @@ export { default as Youtube } from '@/components/icons/Youtube.svg';
 export { default as Twitter } from '@/components/icons/Twitter.svg';
 export { default as Instagram } from '@/components/icons/Instagram.svg';
 export { default as OcnCloud } from '@/components/icons/OcnCloud.svg';
+export { default as OcnCloudLogo } from '@/components/icons/OcnCloudLogo.svg';

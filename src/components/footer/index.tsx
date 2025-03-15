@@ -6,13 +6,11 @@ export const Footer = () => {
   const { t } = useTranslation('footer');
 
   return (
-    <footer className="footer footer-dark">
+    <footer className="footer footer-dark !pb-0">
       <div className="container">
         <div className="columns">
           <div className="column">
-            <div className="footer-logo">
-              <Logo />
-            </div>
+            <Logo />
           </div>
           <div className="column">
             <div className="footer-column">

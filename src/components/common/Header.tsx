@@ -3,7 +3,7 @@ import cn from 'classnames';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { NavMobile } from './MobileNav';
-import { OcnCloud } from '../icons';
+import { OcnCloudLogo } from '../icons';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,7 +50,7 @@ const BaseHeader: React.FC<BaseHeaderProps> = ({ isScrolled, isAlt }) => {
     >
       <nav id="scrollspyNav" className="container">
         <Link className="navbar-brand h-full ml-4" href="/">
-          <OcnCloud />
+          <OcnCloudLogo />
         </Link>
 
         <div className="nav-mobile-menu">
@@ -59,7 +59,7 @@ const BaseHeader: React.FC<BaseHeaderProps> = ({ isScrolled, isAlt }) => {
 
         <div className="navbar-menu is-static text-lg">
           <div className="navbar-end">
-            <a className="navbar-item is-secondary" href="#scrollspyNav">
+            <a className="navbar-item is-secondary" href="#scrollspyHero">
               {t('header.homePage')}
             </a>
 
