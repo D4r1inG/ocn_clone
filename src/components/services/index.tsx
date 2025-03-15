@@ -3,13 +3,20 @@ import { useTranslation } from 'next-i18next';
 import { Boxes, HardDrive, Lock, Monitor, ScanEye } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const FeatureCard = ({ icon, title, description }) => {
+const FeatureCard = ({ icon, title, description, index }) => {
+  const [hasHover, setHasHover] = React.useState(false);
+
   return (
     <motion.div
+      onMouseEnter={() => setHasHover(true)}
       initial={{ y: 40, opacity: 0 }}
       whileInView={{
         y: 0,
         opacity: 1,
+        transition: {
+          delay: hasHover ? 0 : index * 0.2,
+          duration: 0.5,
+        },
       }}
       viewport={{ once: true }}
       whileHover={{
@@ -78,14 +85,14 @@ export const Services = () => {
           <div className="columns">
             {FEATURES.slice(0, 3).map((feature, index) => (
               <div className="column is-4" key={index}>
-                <FeatureCard {...feature} />
+                <FeatureCard {...feature} index={index} />
               </div>
             ))}
           </div>
           <div className="columns justify-center">
             {FEATURES.slice(3).map((feature, index) => (
               <div className="column is-6" key={index}>
-                <FeatureCard {...feature} />
+                <FeatureCard {...feature} index={index + 3} />
               </div>
             ))}
           </div>
