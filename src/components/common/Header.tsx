@@ -53,11 +53,13 @@ const BaseHeader: React.FC<BaseHeaderProps> = ({ isScrolled, isAlt }) => {
       id={cn({
         'navbar-clone': isAlt,
       })}
-      className={cn('navbar is-fresh is-transparent ', {
+      className={cn('navbar is-fresh is-transparent !bg-transparent', {
         'is-active': isScrolled,
         'no-shadow': !isScrolled,
+        'backdrop-blur-md relative': isAlt,
       })}
     >
+      {isAlt && <div className="bg-white opacity-80 absolute inset-0" />}
       <nav id="scrollspyNav" className="container">
         <Link className="navbar-brand h-full ml-4" href="/">
           <OcnCloudLogo />

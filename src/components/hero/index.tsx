@@ -2,11 +2,13 @@ import React from 'react';
 import { useTranslation } from 'next-i18next';
 import { Header } from '../common/Header';
 
+// A9D1F2
+
 export const Hero = () => {
   const { t } = useTranslation('hero');
 
   return (
-    <section id="scrollspyHero" className="hero is-fullheight is-grey">
+    <section id="scrollspyHero" className="hero is-fullheight bg-sky-100">
       <Header />
       <div className="hero-body">
         <div className="container">

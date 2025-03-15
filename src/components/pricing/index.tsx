@@ -80,9 +80,6 @@ export const Pricing = () => {
             <PriceCard {...item} key={index} />
           ))}
         </div>
-        <div className="has-text-centered mt-80">
-          <button className="button signup-button secondary-btn raised long">{t('btn')}</button>
-        </div>
       </div>
     </section>
   );

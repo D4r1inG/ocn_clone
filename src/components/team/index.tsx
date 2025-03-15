@@ -5,22 +5,22 @@ const TEAM = [
   {
     name: 'Zeron',
     role: 'Product Manager',
-    image: './img/team/team-img-1.jpg',
+    image: './img/team/team1.svg',
   },
   {
     name: 'OceanD',
     role: 'Service Manager',
-    image: './img/team/team-img-2.jpg',
+    image: './img/team/team2.svg',
   },
   {
     name: 'BunVN',
     role: 'Hardware Manager',
-    image: './img/team/team-img-3.jpg',
+    image: './img/team/team3.svg',
   },
   {
     name: 'Nastago',
     role: 'Network Manager',
-    image: './img/team/team-img-4.jpg',
+    image: './img/team/team4.svg',
   },
 ];
 
@@ -34,7 +34,9 @@ interface TeamCardProps {
 const TeamCard: React.FC<TeamCardProps> = ({ name, role, image }) => {
   return (
     <div className="column is-3">
-      <img className="img-fluid" loading="lazy" src={image} alt="" />
+      <div className="flex justify-center bg-white border border-b-0 border-gray-100 border-solid pt-3">
+        <img className="img-fluid" loading="lazy" src={image} alt="" />
+      </div>
       <div className="feature-card is-bordered has-text-centered is-feature-reveal">
         <div className="card-title">
           <h4>{name}</h4>
