@@ -40,7 +40,7 @@ export const Testimonial = () => {
   ];
 
   return (
-    <section className="section is-medium">
+    <section className="section section-feature-grey is-medium">
       <div className="container">
         <div className="title-wrapper has-text-centered">
           <h2 className="title is-2">{t('title')}</h2>

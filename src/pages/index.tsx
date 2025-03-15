@@ -24,7 +24,7 @@ export default function Home({ blogs }): ReactNode {
         <Services />
         <HeroAlt />
         <Portfolio />
-        <AboutAlt />
+        {/* <AboutAlt /> */}
         <Team />
         <Pricing />
         <Testimonial />

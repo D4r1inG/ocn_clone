@@ -49,7 +49,7 @@ export const Team = () => {
   const { t } = useTranslation('team');
 
   return (
-    <section id="scrollspyTeam" className="section is-medium">
+    <section id="scrollspyTeam" className="section section-feature-grey is-medium">
       <div className="container">
         <div className="title-wrapper has-text-centered">
           <h2 className="title is-2">

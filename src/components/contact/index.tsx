@@ -6,7 +6,7 @@ export const Contact = () => {
   const { t } = useTranslation('contact');
 
   return (
-    <section id="scrollspyContact" className="section is-medium">
+    <section id="scrollspyContact" className="section section-feature-grey is-medium">
       <div className="container">
         <div className="contact-main">
           <img className="img-fluid rounded" loading="lazy" src="./img/contact/contact-img-1.jpg" alt="" />

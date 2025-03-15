@@ -7,7 +7,7 @@ export const Blogs = ({ blogs }) => {
   const { t } = useTranslation('blog');
 
   return (
-    <section id="scrollspyBlog" className="section section-feature-grey is-medium">
+    <section id="scrollspyBlog" className="section is-medium">
       <div className="container">
         <div className="blog-main">
           <div className="title-wrapper has-text-centered blog-title">

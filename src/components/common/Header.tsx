@@ -4,6 +4,8 @@ import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { NavMobile } from './MobileNav';
 import { OcnCloudLogo } from '../icons';
+import { Languages } from 'lucide-react';
+import { useRouter } from 'next/router';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,6 +39,14 @@ interface BaseHeaderProps {
 
 const BaseHeader: React.FC<BaseHeaderProps> = ({ isScrolled, isAlt }) => {
   const { t } = useTranslation('common');
+  const router = useRouter();
+
+  const handleChangeLocale = () => {
+    const currentLocale = router.locale;
+    const locale = currentLocale === 'en' ? 'vi' : 'en';
+
+    router.push(router.asPath, router.asPath, { locale, scroll: false });
+  };
 
   return (
     <header
@@ -91,6 +101,9 @@ const BaseHeader: React.FC<BaseHeaderProps> = ({ isScrolled, isAlt }) => {
               {t('header.contact')}
             </a>
           </div>
+          <button className="navbar-item is-secondary " onClick={handleChangeLocale}>
+            <Languages className="w-[36px] h-[36px]" />
+          </button>
         </div>
       </nav>
     </header>

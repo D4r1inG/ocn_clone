@@ -68,7 +68,7 @@ export const Pricing = () => {
   ];
 
   return (
-    <section id="scrollspyPricing" className="section section-feature-grey is-medium">
+    <section id="scrollspyPricing" className="section is-medium">
       <div className="container">
         <div className="title-wrapper has-text-centered">
           <h2 className="title is-2">{t('title.prefix')}</h2>
