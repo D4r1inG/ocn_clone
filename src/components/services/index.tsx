@@ -3,10 +3,25 @@ import { useTranslation } from 'next-i18next';
 import { Boxes, HardDrive, Lock, Monitor, ScanEye } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const FeatureCard = ({ icon, title, description }) => {
+const FeatureCard = ({ icon, title, description, index }) => {
   return (
     <motion.div
-      whileHover={{ y: -4, borderColor: 'transparent', boxShadow: '0 20px 15px -12px rgba(0, 0, 0, 0.25)' }}
+      initial={{ y: 40, opacity: 0 }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition: {
+          delay: index * 0.2,
+          duration: 0.5,
+        },
+      }}
+      viewport={{ once: true }}
+      whileHover={{
+        y: -4,
+        borderColor: 'transparent',
+        boxShadow: '0 20px 15px -12px rgba(0, 0, 0, 0.25)',
+        transition: { duration: 0.3 },
+      }}
       className="is-bordered border border-gray-100 border-solid p-6 rounded-2xl"
     >
       <div className="card-icon text-black mb-4">{icon}</div>
@@ -67,14 +82,14 @@ export const Services = () => {
           <div className="columns">
             {FEATURES.slice(0, 3).map((feature, index) => (
               <div className="column is-4" key={index}>
-                <FeatureCard {...feature} />
+                <FeatureCard {...feature} index={index} />
               </div>
             ))}
           </div>
           <div className="columns justify-center">
             {FEATURES.slice(3).map((feature, index) => (
               <div className="column is-6" key={index}>
-                <FeatureCard {...feature} />
+                <FeatureCard {...feature} index={index + 3} />
               </div>
             ))}
           </div>
