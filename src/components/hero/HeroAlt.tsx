@@ -14,7 +14,7 @@ export const HeroAlt = () => {
           <h1 className="title is-1 is-bold is-spaced light-text mt-20 mb-20">{t('title.highlight')}</h1>
 
           <Link href="/" className="navbar-item">
-            <span type="button" className="button signup-button secondary-btn raised">
+            <span type="button" className="button cta primary-btn raised">
               {t('btn')}
             </span>
           </Link>

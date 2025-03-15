@@ -24,9 +24,7 @@ export const Hero = () => {
           <div className="columns is-vcentered">
             <div className="column is-6 landing-caption">
               <h1 className="title is-1 is-bold is-spaced !text-white">
-                {t('title.prefix')}
-                <mark className="text-hightlight main !text-white">{t('title.highlight')}</mark>
-                {t('title.suffix')}
+                {t('title.prefix')} {t('title.highlight')} {t('title.suffix')}
               </h1>
               <p className="subtitle is-5 is-muted mt-3 mb-8 !text-white"> {t('p')}</p>
               <div>

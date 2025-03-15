@@ -22,19 +22,19 @@ export const Testimonial = () => {
     {
       name: t('comments.1.name'),
       position: 'System Admin',
-      img: './img/testimonial/testimonial-img-1.jpg',
+      img: './img/testimonial/review-author-1.jpg',
       comment: t('comments.1.content'),
     },
     {
       name: t('comments.2.name'),
       position: 'Solution Architect',
-      img: './img/testimonial/testimonial-img-2.jpg',
+      img: './img/testimonial/review-author-2.jpg',
       comment: t('comments.1.content'),
     },
     {
       name: t('comments.3.name'),
       position: 'SOC Manager',
-      img: './img/testimonial/testimonial-img-4.jpg',
+      img: './img/testimonial/review-author-3.jpg',
       comment: t('comments.3.content'),
     },
   ];

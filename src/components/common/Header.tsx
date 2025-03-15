@@ -69,41 +69,44 @@ const BaseHeader: React.FC<BaseHeaderProps> = ({ isScrolled, isAlt }) => {
           <NavMobile />
         </div>
 
-        <div className="navbar-menu is-static text-lg">
+        <div className="navbar-menu is-static text-lg ">
           <div className="navbar-end">
-            <a className="navbar-item is-secondary" href="#scrollspyHero">
+            <a className="navbar-item is-secondary !text-[#344258] font-semibold" href="#scrollspyHero">
               {t('header.homePage')}
             </a>
 
-            <a className="navbar-item is-secondary" href="#scrollspyServices">
+            <a className="navbar-item is-secondary !text-[#344258] font-semibold" href="#scrollspyServices">
               {t('header.services')}
             </a>
 
-            <a className="navbar-item is-secondary" href="#scrollspyPortfolio">
+            <a className="navbar-item is-secondary !text-[#344258] font-semibold" href="#scrollspyPortfolio">
               {t('header.projects')}
             </a>
 
-            <a className="navbar-item is-secondary" href="#scrollspyAbout">
+            {/* <a className="navbar-item is-secondary !text-[#344258] font-semibold" href="#scrollspyAbout">
               {t('header.aboutUs')}
-            </a>
+            </a> */}
 
-            <a className="navbar-item is-secondary" href="#scrollspyTeam">
+            <a className="navbar-item is-secondary !text-[#344258] font-semibold" href="#scrollspyTeam">
               {t('header.team')}
             </a>
 
-            <a className="navbar-item is-secondary" href="#scrollspyPricing">
+            <a className="navbar-item is-secondary !text-[#344258] font-semibold" href="#scrollspyPricing">
               {t('header.pricing')}
             </a>
 
-            <a className="navbar-item is-secondary" href="#scrollspyBlog">
+            <a className="navbar-item is-secondary !text-[#344258] font-semibold" href="#scrollspyBlog">
               {t('header.blogs')}
             </a>
 
-            <a className="navbar-item is-secondary" href="#scrollspyContact">
+            <a className="navbar-item is-secondary !text-[#344258] font-semibold" href="#scrollspyContact">
               {t('header.contact')}
             </a>
           </div>
-          <button className="navbar-item is-secondary " onClick={handleChangeLocale}>
+          <button
+            className="navbar-item is-secondary !text-[#344258] font-semibold "
+            onClick={handleChangeLocale}
+          >
             <Languages className="w-[36px] h-[36px]" />
           </button>
         </div>
