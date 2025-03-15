@@ -6,10 +6,10 @@ export const Footer = () => {
   const { t } = useTranslation('footer');
 
   return (
-    <footer className="footer footer-dark !pb-0">
+    <footer className="footer footer-dark !pb-8">
       <div className="container">
         <div className="columns">
-          <div className="column">
+          <div className="column mt-8">
             <Logo />
           </div>
           <div className="column">
@@ -69,13 +69,6 @@ export const Footer = () => {
         <div className="border-top mt-40 footer-bottom">
           <div className="footer-bottom-content">
             <div>© 2025. All Rights Reserved.</div>
-            <div className=" mb-10 light-gray-text">
-              Built by{' '}
-              <a href="https://ocn.com.vn/" className="text-primary">
-                OCN
-              </a>{' '}
-              with <span className="text-primary">♥</span>
-            </div>
           </div>
 
           <div className="footer-social">
