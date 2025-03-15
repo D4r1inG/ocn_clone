@@ -3,6 +3,7 @@ import cn from 'classnames';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { NavMobile } from './MobileNav';
+import { OcnCloud } from '../icons';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,86 +49,45 @@ const BaseHeader: React.FC<BaseHeaderProps> = ({ isScrolled, isAlt }) => {
       })}
     >
       <nav id="scrollspyNav" className="container">
-        <Link className="navbar-brand" href="/">
-          <img src="./img/branding/ocn-logo.png" alt="" />
+        <Link className="navbar-brand h-full ml-4" href="/">
+          <OcnCloud />
         </Link>
 
         <div className="nav-mobile-menu">
           <NavMobile />
         </div>
 
-        <div className="navbar-menu is-static">
+        <div className="navbar-menu is-static text-lg">
           <div className="navbar-end">
-            <a
-              className="navbar-item is-secondary"
-              href="#scrollspyNav"
-              aria-current="page"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
+            <a className="navbar-item is-secondary" href="#scrollspyNav">
               {t('header.homePage')}
             </a>
 
-            <a
-              className="navbar-item is-secondary"
-              href="#scrollspyServices"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
+            <a className="navbar-item is-secondary" href="#scrollspyServices">
               {t('header.services')}
             </a>
 
-            <a
-              className="navbar-item is-secondary"
-              href="#scrollspyPortfolio"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
+            <a className="navbar-item is-secondary" href="#scrollspyPortfolio">
               {t('header.projects')}
             </a>
 
-            <a
-              className="navbar-item is-secondary"
-              href="#scrollspyAbout"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
+            <a className="navbar-item is-secondary" href="#scrollspyAbout">
               {t('header.aboutUs')}
             </a>
 
-            <a
-              className="navbar-item is-secondary"
-              href="#scrollspyTeam"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
+            <a className="navbar-item is-secondary" href="#scrollspyTeam">
               {t('header.team')}
             </a>
 
-            <a
-              className="navbar-item is-secondary"
-              href="#scrollspyPricing"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
+            <a className="navbar-item is-secondary" href="#scrollspyPricing">
               {t('header.pricing')}
             </a>
 
-            <a
-              className="navbar-item is-secondary"
-              href="#scrollspyBlog"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
+            <a className="navbar-item is-secondary" href="#scrollspyBlog">
               {t('header.blogs')}
             </a>
 
-            <a
-              className="navbar-item is-secondary"
-              href="#scrollspyContact"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
+            <a className="navbar-item is-secondary" href="#scrollspyContact">
               {t('header.contact')}
             </a>
           </div>

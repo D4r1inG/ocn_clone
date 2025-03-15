@@ -9,7 +9,7 @@ export default function Document() {
     <Html lang={currentLocale}>
       <Head>
         <meta app-version={date} />
-        <link rel="icon" href="/img/favicon.ico" />
+        <link rel="icon" href="/img/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
