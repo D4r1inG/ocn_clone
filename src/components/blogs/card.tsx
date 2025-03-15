@@ -21,7 +21,7 @@ export const Card: React.FC<IProps> = ({ content }) => {
   return (
     <article>
       <figure onClick={() => router.push(`/blogs/${slug}`)}>
-        <img src={image} alt="" />
+        <img src={image} alt="" className="h-[200px] object-cover rounded-md" />
         <figcaption>
           <Eye className="text-white card-icon" />
           <div className="light-gray-text">Chi tiết</div>
